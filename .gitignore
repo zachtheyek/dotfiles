@@ -1,0 +1,6 @@
+# Git
+.git-credentials
+
+# SSH
+ssh/.ssh/*
+!ssh/.ssh/config
