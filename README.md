@@ -166,7 +166,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 | Tool | Description | Source |
 |:-----|:------------|:-------|
-| iCalBuddy | macOS calendar integration inside terminal and tmux | [dkaluta/icalBuddy64](https://github.com/dkaluta/icalBuddy64) |
+| iCalBuddy | macOS calendar integration inside terminal and tmux | [ali-rantakari/icalBuddy](https://github.com/ali-rantakari/icalBuddy) |
 | Thefuck | Auto-correct mistyped commands | [nvbn/thefuck](https://github.com/nvbn/thefuck) |
 | yt-dlp | Download videos from YouTube and other platforms | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) |
 | Scripts | Personal collection of maintenance and utility scripts | |
