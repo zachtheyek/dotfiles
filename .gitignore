@@ -1,12 +1,12 @@
-# FzF
+# FzF (submodules)
 fzf/.config/fzf/fzf-git.sh
 fzf/.config/fzf/fzf-theme.sh
 
-# GitHub
-gh/.config/gh/hosts.yml
-
 # Git
 git/.git-credentials
+
+# GitHub
+gh/.config/gh/hosts.yml
 
 # Karabiner 
 karabiner/.config/karabiner/automatic_backups/
@@ -15,7 +15,7 @@ karabiner/.config/karabiner/automatic_backups/
 ssh/.ssh/*
 !ssh/.ssh/config.example
 
-# Tmux 
+# Tmux (submodules)
 tmux/.config/tmux/plugins/
 
 # Zsh 

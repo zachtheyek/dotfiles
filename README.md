@@ -186,6 +186,9 @@ mv ~/.config/nvim ~/.config/nvim.backup
 - ### Fastfetch
   - **`Neofetch` alternative with faster performance**: [**fastfetch-cli/fastfetch**](https://github.com/fastfetch-cli/fastfetch)
 
+- ### Neofetch
+  - **System information tool with ASCII art**: [**dylanaraps/neofetch**](https://github.com/dylanaraps/neofetch)
+
 ## Productivity & Utilities
 
 - ### iCalBuddy
