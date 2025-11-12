@@ -208,7 +208,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 Sensitive files were sanitized or completely excluded via `.gitignore`. This includes, but is not limited to, login credentials, API keys, SSH public-private key pairs, secrets, sensitive environment variables, etc. 
 
 > [!CAUTION]
-> If you choose to share your own dotfiles publically -- be very careful what you commit to version control!
+> If you choose to share your own dotfiles publicly -- be very careful what you commit to version control!
 
 # License
 
