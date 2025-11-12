@@ -1,0 +1,62 @@
+# TODO:
+# spaces {'m', 's', 't', 'w'} aren't spaced properly 
+# spaces don't updated when switched (issue with Aerospace hook?)
+# empty spaces still appear in bar
+# add additional widgets (battery, weather, datetime, upcoming events, vpn)
+# ^ think about conflicts with tmux, nvim, zsh info
+# Note, Aerospace has i3-like UI elements now. try to incorporate into sketchybar? 
+# Note, also try to incorporate icalBuddy into sketchybar? 
+
+#!/usr/bin/env sh
+
+source "$HOME/.config/sketchybar/colors.sh" 
+source "$HOME/.config/sketchybar/icons.sh" 
+
+ITEM_DIR="$HOME/.config/sketchybar/items" 
+PLUGIN_DIR="$HOME/.config/sketchybar/plugins" 
+
+FONT="JetBrainsMono Nerd Font" 
+SPACE_CLICK_SCRIPT="aerospace space focus \$SID"
+
+PADDINGS=3 
+
+POPUP_BORDER_WIDTH=2
+POPUP_CORNER_RADIUS=11
+
+SHADOW=on
+
+sketchybar --bar     height=40                                         \
+                     color=$BAR_COLOR                                  \
+                     shadow=$SHADOW                                    \
+                     position=right                                    \
+                     sticky=on                                         \
+                     padding_right=10                                  \
+                     padding_left=10                                   \
+                     corner_radius=9                                   \
+                     y_offset=10                                       \
+                     margin=10                                         \
+                     blur_radius=10                                    \
+                                                                       \
+           --default updates=when_shown                                \
+                     icon.font="$FONT:Bold:14.0"                       \
+                     icon.color=$ICON_COLOR                            \
+                     icon.padding_left=$PADDINGS                       \
+                     icon.padding_right=$PADDINGS                      \
+                     label.font="$FONT:Semibold:13.0"                  \
+                     label.color=$LABEL_COLOR                          \
+                     label.padding_left=$PADDINGS                      \
+                     label.padding_right=$PADDINGS                     \
+                     background.padding_right=$PADDINGS                \
+                     background.padding_left=$PADDINGS                 \
+                     popup.background.border_width=2                   \
+                     popup.background.corner_radius=11                 \
+                     popup.background.border_color=$POPUP_BORDER_COLOR \
+                     popup.background.color=$POPUP_BACKGROUND_COLOR    \
+                     popup.background.shadow.drawing=$SHADOW
+
+source "$ITEM_DIR/apple.sh"
+source "$ITEM_DIR/spaces.sh"
+
+bash "$ITEM_DIR/aerospace.sh"
+
+sketchybar --update
