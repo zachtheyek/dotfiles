@@ -125,7 +125,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | iTerm2 | Feature-rich terminal emulator for macOS | [gnachman/iTerm2](https://github.com/gnachman/iTerm2) |
 | Zsh | Interactive shell with extensive customization | [zsh-users/zsh](https://github.com/zsh-users/zsh) |
 | Tmux | Terminal multiplexer + management for sessions, windows, and panes | [tmux/tmux](https://github.com/tmux/tmux) |
-| Envman | Centralized management of shell variables, aliases, and functions | [tariibaba/envman](https://github.com/tariibaba/envman) |
+| Envman | Centralized management of shell variables, aliases, and functions | [bitrise-io/envman](https://github.com/bitrise-io/envman) |
 
 ## File Management & Navigation
 
