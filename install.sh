@@ -26,6 +26,7 @@ set -e
 cd "$(dirname "$0")" || exit 1
 
 # Auto-discover all packages (directories in cwd)
+# Automatically ignores hidden directories (e.g. .git or .claude)
 get_all_packages() {
     local packages=()
     for dir in */; do
