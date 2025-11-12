@@ -1,0 +1,6 @@
+column_width = 120               # Maximum line width before wrapping
+line_endings = "Unix"            # Use LF line endings
+indent_type = "Spaces"           # Indent with spaces (not tabs)
+indent_width = 4                 # Use 4 spaces for indentation
+quote_style = "AutoPreferDouble" # Prefer "double quotes" unless 'single' is clearly better
+call_parentheses = "Always"      # Always use parentheses for function calls (even if optional)

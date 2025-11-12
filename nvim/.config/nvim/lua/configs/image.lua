@@ -1,0 +1,39 @@
+-- TODO:
+-- couldn't get image previews to work
+-- https://github.com/b0o/nvim-tree-preview.lua/?tab=readme-ov-file#previewing-images
+-- https://github.com/3rd/image.nvim
+
+-- return {
+--     backend = "kitty", -- Yes, use kitty backend even for iTerm2
+--     kitty_method = "unicode-placeholder", -- Works better with iTerm2
+--     max_height_window_percentage = 50,
+--     max_width_window_percentage = 50,
+--     window_overlap_clear_enabled = true,
+--     editor_only_render_when_focused = true,
+--
+--     -- iTerm2-specific optimizations
+--     iterm2_combine_blocks = true,
+--     iterm2_use_whole_window = false,
+--     iterm2_clear_between_puts = true,
+--
+--     -- Performance tweaks
+--     async_render = true,
+--     only_render_when_focused = true,
+--
+--     hijack_file_patterns = {
+--         "*.png",
+--         "*.jpg",
+--         "*.jpeg",
+--         "*.gif",
+--         "*.webp",
+--         "*.bmp",
+--     },
+--
+--     integrations = {
+--         nvimtree = {
+--             enabled = true,
+--             clear_on_cursor_move = true,
+--             only_render_image_at_cursor = false,
+--         },
+--     },
+-- }

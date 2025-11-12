@@ -1,0 +1,120 @@
+-- TODO: come back to this later
+-- left: mode, harpoon, filename (* to indicate whether file is unsaved)
+-- right: git branch & diffs, code diagnostics, todo's
+-- additional: LSP & conda env & docker/kube stuff
+-- https://github.com/nvim-lualine/lualine.nvim?tab=readme-ov-file#changing-components-in-lualine-sections
+-- https://github.com/nvim-lualine/lualine.nvim/wiki/Component-snippets
+-- https://github.com/b0o/incline.nvim/discussions/categories/showcase
+-- https://github.com/b0o/incline.nvim/discussions/64
+-- note: make lualine transparency match terminal & nvim (see autocmds.lua)
+-- note: add lualine indicator for whether current nvim session is being tracked (see vimobsession.lua)
+-- note: remove parent directory indicator on right (redundant with tmux statusline)
+
+-- -- Harpoon
+-- local function harpoon_component()
+--     local ok, harpoon = pcall(require, "harpoon")
+--     if not ok then
+--         return ""
+--     end
+--
+--     local marks = harpoon:list().items
+--     local current_file_path = vim.fn.expand("%:p:.")
+--     local label = {}
+--
+--     for id, item in ipairs(marks) do
+--         if item.value == current_file_path then
+--             table.insert(label, string.format("%%#HarpoonActive#%d", id))
+--         else
+--             table.insert(label, string.format("%%#HarpoonInactive#%d", id))
+--         end
+--     end
+--
+--     if #label > 0 then
+--         return "󰛢 " .. table.concat(label, " ") .. " |"
+--     else
+--         return ""
+--     end
+-- end
+--
+-- -- Todo-comments
+-- local function todo_comments_component()
+--     local ok, todo = pcall(require, "todo-comments")
+--     if not ok then
+--         return ""
+--     end
+--
+--     local keywords = require("todo-comments.config").options.keywords
+--     local counts = {}
+--     local total = 0
+--
+--     for kw, _ in pairs(keywords) do
+--         local found = vim.fn.searchcount({ pattern = "\\b" .. kw .. "\\b", maxcount = 0 })
+--         if found.total > 0 then
+--             table.insert(counts, string.format("%s:%d", kw, found.total))
+--             total = total + found.total
+--         end
+--     end
+--
+--     if total > 0 then
+--         return "󱞩 " .. table.concat(counts, " ")
+--     else
+--         return ""
+--     end
+-- end
+--
+-- -- Conda
+-- local function conda_env_component()
+--     local env = vim.env.CONDA_DEFAULT_ENV
+--     if env and env ~= "" then
+--         return " " .. env
+--     end
+--     return ""
+-- end
+--
+-- return function()
+--     -- Use catppuccin Lualine theme if available, fallback to auto
+--     local ok, catppuccin = pcall(require, "catppuccin.groups.integrations.lualine")
+--     local theme = ok and catppuccin.get() or "auto"
+--
+--     require("lualine").setup({
+--         options = {
+--             theme = theme,
+--             -- section_separators = { left = "", right = "" },
+--             -- component_separators = { left = "", right = "" },
+--             --
+--             -- section_separators = { left = "", right = "" },
+--             -- component_separators = { left = "", right = "" },
+--             --
+--             -- section_separators = { left = "", right = "" },
+--             -- component_separators = { left = "", right = "" },
+--             --
+--             -- section_separators = { left = "│", right = "│" },
+--             -- component_separators = { left = "│", right = "│" },
+--             --
+--             -- section_separators = { left = "", right = "" },
+--             -- component_separators = { left = "", right = "" },
+--             --
+--             -- section_separators = { left = "", right = "" },
+--             -- component_separators = { left = "", right = "" },
+--             section_separators = { left = "", right = "" },
+--             component_separators = { left = "", right = "" },
+--         },
+--         sections = {
+--             lualine_a = { "mode" },
+--             lualine_b = { "filename" },
+--             lualine_c = { harpoon_component },
+--             lualine_x = { "branch", "diff", "diagnostics" },
+--             lualine_y = { todo_comments_component },
+--             lualine_z = { conda_env_component, "lsp_progress" },
+--         },
+--         inactive_sections = {
+--             lualine_a = {},
+--             lualine_b = {},
+--             lualine_c = { "filename" },
+--             lualine_x = { "location" },
+--             lualine_y = {},
+--             lualine_z = {},
+--         },
+--         extensions = { "nvim-tree", "fugitive", "quickfix" },
+--     })
+-- end
