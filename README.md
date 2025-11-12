@@ -1,10 +1,10 @@
-This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package (tool configuration) lives in its own directory that mimics the expected configuration structure. When invoked, Stow will create symlinks from your home directory to the files in this repository. Naturally, you'll need to have each tool installed beforehand for the package to take effect.
+This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package is tied to a tool (or set of tools), and lives in its own directory that mimics the expected configuration structure relative to `$HOME`. When invoked, Stow will create symlinks to the specified packages in this repository throughout your machine, such that each tool functions as normal, while retaining a unified control center for the user. It's recommended to make edits to the configs from the repository itself, rather than through the symlinks (to avoid artifacts that become out-of-sync over time). Naturally, you'll need to have the tool installed beforehand for the package to take effect (refer to the official docs for further instruction). 
 
 It goes without saying: all packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy comes down to: 
 
 - Keyboard-first, with a preference for TUIs and vim bindings
 - Consistent & productive UI > ricing potential
-  - Optimize with a single 27" monitor in mind
+  - Optimized with a single 27" monitor in mind
 - Deep integration of plugins 
   - Bonus points if it's open-source, community-driven, and well-maintained
 
