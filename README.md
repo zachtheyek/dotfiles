@@ -89,7 +89,7 @@ echo "config=true" > my-tool/.config/my-tool/config.toml
 ./install.sh my-tool
 ```
 
-In this regard, I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[^1] to be especially helpful.
+I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[^1] to be especially helpful for understanding the underlying workflow.
 
 # Troubleshooting
 
@@ -114,87 +114,90 @@ mv ~/.config/nvim ~/.config/nvim.backup
 ## Window Management & UI
 
 - ### Aerospace
-  - **i3-inspired tiling window manager for macOS** — [**nikitabobko/AeroSpace**](https://github.com/nikitabobko/AeroSpace)
+  - **i3-inspired tiling window manager for macOS**: [**nikitabobko/AeroSpace**](https://github.com/nikitabobko/AeroSpace)
 
 - ### Sketchybar
-  - **Highly customizable macOS menu bar replacement** — [**FelixKratz/SketchyBar**](https://github.com/FelixKratz/SketchyBar)
+  - **Highly customizable macOS menu bar replacement**: [**FelixKratz/SketchyBar**](https://github.com/FelixKratz/SketchyBar)
 
 - ### Karabiner
-  - **Powerful keyboard remapping for macOS** — [**pqrs-org/Karabiner-Elements**](https://github.com/pqrs-org/Karabiner-Elements)
+  - **Powerful keyboard remapping for macOS**: [**pqrs-org/Karabiner-Elements**](https://github.com/pqrs-org/Karabiner-Elements)
 
 ## Shell & Terminal
 
+- ### iTerm2
+  - **Feature-rich terminal emulator for macOS**: [**gnachman/iTerm2**](https://github.com/gnachman/iTerm2)
+
 - ### Zsh
-  - **Interactive shell with extensive customization** — [**zsh-users/zsh**](https://github.com/zsh-users/zsh)
+  - **Interactive shell with extensive customization**: [**zsh-users/zsh**](https://github.com/zsh-users/zsh)
 
 - ### Tmux
-  - **Terminal multiplexer + management for sessions, windows, and panes** — [**tmux/tmux**](https://github.com/tmux/tmux)
+  - **Terminal multiplexer + management for sessions, windows, and panes**: [**tmux/tmux**](https://github.com/tmux/tmux)
 
 - ### Envman
-  - **Centralized management of shell variables, aliases, and functions** — [**tariibaba/envman**](https://github.com/tariibaba/envman)
+  - **Centralized management of shell variables, aliases, and functions**: [**tariibaba/envman**](https://github.com/tariibaba/envman)
 
 ## File Management & Navigation
 
 - ### Yazi
-  - **Modern TUI file manager with image previews** — [**sxyazi/yazi**](https://github.com/sxyazi/yazi)
+  - **Modern TUI file manager with image previews**: [**sxyazi/yazi**](https://github.com/sxyazi/yazi)
 
 - ### Fzf
-  - **Interactive fuzzy search for files, commands, and more** — [**junegunn/fzf**](https://github.com/junegunn/fzf)
+  - **Interactive fuzzy search for files, commands, and more**: [**junegunn/fzf**](https://github.com/junegunn/fzf)
 
 - ### Eza
-  - **Enhanced `ls` with icons and git integration** — [**eza-community/eza**](https://github.com/eza-community/eza)
+  - **Enhanced `ls` with icons and git integration**: [**eza-community/eza**](https://github.com/eza-community/eza)
 
 - ### Zoxide
-  - **Smarter `cd` that learns your habits** — [**ajeetdsouza/zoxide**](https://github.com/ajeetdsouza/zoxide)
+  - **Smarter `cd` that learns your habits**: [**ajeetdsouza/zoxide**](https://github.com/ajeetdsouza/zoxide)
 
 ## Text Editing & Viewing
 
 - ### Neovim
-  - **Hyperextensible Vim-based text editor** — [**neovim/neovim**](https://github.com/neovim/neovim)
+  - **Hyperextensible Vim-based text editor**: [**neovim/neovim**](https://github.com/neovim/neovim)
 
 - ### Bat
-  - **Enhanced `cat` with syntax highlighting** — [**sharkdp/bat**](https://github.com/sharkdp/bat)
+  - **Enhanced `cat` with syntax highlighting**: [**sharkdp/bat**](https://github.com/sharkdp/bat)
 
 - ### Sioyek
-  - **Keyboard-focused PDF reader optimized for academic work** — [**ahrm/sioyek**](https://github.com/ahrm/sioyek)
+  - **Keyboard-focused PDF reader optimized for academic work**: [**ahrm/sioyek**](https://github.com/ahrm/sioyek)
 
 ## Development Tools
 
 - ### Git
-  - **Distributed version control system** — [**git/git**](https://github.com/git/git)
+  - **Distributed version control system**: [**git/git**](https://github.com/git/git)
+
+- ### SSH
+  - **Secure shell configuration for remote access and authentication**
 
 - ### GitHub CLI (gh)
-  - **Official GitHub command-line tool** — [**cli/cli**](https://github.com/cli/cli)
+  - **Official GitHub command-line tool**: [**cli/cli**](https://github.com/cli/cli)
 
 ## System Monitoring
 
 - ### Btop
-  - **Beautiful terminal-based system monitor** — [**aristocratos/btop**](https://github.com/aristocratos/btop)
+  - **Beautiful terminal-based system monitor**: [**aristocratos/btop**](https://github.com/aristocratos/btop)
 
 - ### Htop
-  - **Interactive process monitoring tool** — [**htop-dev/htop**](https://github.com/htop-dev/htop)
+  - **Interactive process monitoring tool**: [**htop-dev/htop**](https://github.com/htop-dev/htop)
 
 - ### S-tui
-  - **CPU monitoring and stress testing** — [**amanusk/s-tui**](https://github.com/amanusk/s-tui)
+  - **CPU monitoring and stress testing**: [**amanusk/s-tui**](https://github.com/amanusk/s-tui)
 
 - ### Fastfetch
-  - **`Neofetch` alternative with faster performance** — [**fastfetch-cli/fastfetch**](https://github.com/fastfetch-cli/fastfetch)
+  - **`Neofetch` alternative with faster performance**: [**fastfetch-cli/fastfetch**](https://github.com/fastfetch-cli/fastfetch)
 
 ## Productivity & Utilities
 
 - ### iCalBuddy
-  - **macOS calendar integration inside terminal and tmux** — [**dkaluta/icalBuddy64**](https://github.com/dkaluta/icalBuddy64)
+  - **macOS calendar integration inside terminal and tmux**: [**dkaluta/icalBuddy64**](https://github.com/dkaluta/icalBuddy64)
 
 - ### Thefuck
-  - **Auto-correct mistyped commands** — [**nvbn/thefuck**](https://github.com/nvbn/thefuck)
+  - **Auto-correct mistyped commands**: [**nvbn/thefuck**](https://github.com/nvbn/thefuck)
 
 - ### yt-dlp
-  - **Download videos from YouTube and other platforms** — [**yt-dlp/yt-dlp**](https://github.com/yt-dlp/yt-dlp)
-
-## Utility Scripts
-
+  - **Download videos from YouTube and other platforms**: [**yt-dlp/yt-dlp**](https://github.com/yt-dlp/yt-dlp)
 - ### Scripts
-  - **Collection of maintenance and utility scripts**
+  - **Personal collection of maintenance and utility scripts**
 
 # Security Note
 
