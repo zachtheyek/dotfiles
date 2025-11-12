@@ -1,4 +1,4 @@
-This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package is tied to a tool (or set of tools), and lives in its own directory that mimics the expected configuration structure relative to `$HOME`. When invoked, Stow will create symlinks to the specified packages in this repository throughout your machine, such that each tool may function as normal, while retaining a unified control hub for the user. It's recommended to make edits to the configs from the repository itself, rather than through the symlinks (to avoid artifacts that become out-of-sync over time). Naturally, you'll need to have a tool installed beforehand for the package to take effect (usually just `brew install X`;  refer to the official docs for further instruction). 
+This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package is tied to a tool (or set of tools), and lives in its own directory that mimics the expected configuration structure relative to `$HOME`. When invoked, Stow will create symlinks to the specified packages in this repository throughout your machine, such that each tool may function as normal, while retaining a unified control hub for the user. It's recommended to make edits to the configs from the repository itself, rather than through the symlinks, to avoid artifacts that become out-of-sync over time. Naturally, you'll need to have a tool installed beforehand for the package to take effect (usually just `brew install X`;  refer to the official docs for further instruction). 
 
 > [!NOTE]
 > All packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy comes down to: 
@@ -68,10 +68,8 @@ Each command can be followed up with a space-separated list of packages to be op
 Note that some tools require additional setup. For example:
 
 1. **Tmux plugins**: Open tmux and press `<prefix>+I` to install plugins via TPM
-2. **Neovim plugins**: Open nvim and run `:Lazy sync`
-3. **Oh-My-Zsh**: Install if not already present: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-4. **Powerlevel10k**: Install the theme and fonts if needed
-5. **Karabiner-Elements**: Grant accessibility permissions in System Settings
+2. **Neovim plugins**: Open nvim and run `:Lazy sync` to install plugins via Lazy
+3. **Karabiner-Elements**: Grant accessibility permissions in System Settings
 
 etc.
 
