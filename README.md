@@ -78,8 +78,8 @@ Please reference the official docs if you're having trouble setting up a specifi
 
 Further, if you'd like to add your own package: 
 
-1. Create a new directory matching the package name
-2. Add your config files in the same structure as they appear in `~`
+1. Create a new directory in this repository with the package name
+2. Add your config files in the same structure as they appear in `$HOME`
 3. Run `./install.sh <package-name>` to symlink it
 
 Example:
