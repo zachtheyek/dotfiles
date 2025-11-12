@@ -1,5 +1,3 @@
-# Dotfiles
-
 This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package (tool configuration) lives in its own directory that mimics the expected configuration structure. When invoked, Stow will create symlinks from your home directory to the files in this repository. Naturally, you'll need to have each tool installed beforehand for the package to take effect.
 
 It goes without saying: all packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy comes down to: 
