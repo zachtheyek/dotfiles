@@ -113,88 +113,88 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 ## Window Management & UI
 
-### Aerospace
-**i3-inspired tiling window manager for macOS**
+- ### Aerospace
+  - **i3-inspired tiling window manager for macOS** — [**nikitabobko/AeroSpace**](https://github.com/nikitabobko/AeroSpace)
 
-### Sketchybar
-**Highly customizable macOS menu bar replacement**
+- ### Sketchybar
+  - **Highly customizable macOS menu bar replacement** — [**FelixKratz/SketchyBar**](https://github.com/FelixKratz/SketchyBar)
 
-### Karabiner
-**Powerful keyboard remapping for macOS**
+- ### Karabiner
+  - **Powerful keyboard remapping for macOS** — [**pqrs-org/Karabiner-Elements**](https://github.com/pqrs-org/Karabiner-Elements)
 
 ## Shell & Terminal
 
-### Zsh
-**Interactive shell with extensive customization**
+- ### Zsh
+  - **Interactive shell with extensive customization** — [**zsh-users/zsh**](https://github.com/zsh-users/zsh)
 
-### Tmux
-**Terminal multiplexer + management for sessions, windows, and panes**
+- ### Tmux
+  - **Terminal multiplexer + management for sessions, windows, and panes** — [**tmux/tmux**](https://github.com/tmux/tmux)
 
-### Envman
-**Centralized management of shell variables, aliases, and functions**
+- ### Envman
+  - **Centralized management of shell variables, aliases, and functions** — [**tariibaba/envman**](https://github.com/tariibaba/envman)
 
 ## File Management & Navigation
 
-### Yazi
-**Modern TUI file manager with image previews**
+- ### Yazi
+  - **Modern TUI file manager with image previews** — [**sxyazi/yazi**](https://github.com/sxyazi/yazi)
 
-### Fzf
-**Interactive fuzzy search for files, commands, and more**
+- ### Fzf
+  - **Interactive fuzzy search for files, commands, and more** — [**junegunn/fzf**](https://github.com/junegunn/fzf)
 
-### Eza
-**Enhanced `ls` with icons and git integration**
+- ### Eza
+  - **Enhanced `ls` with icons and git integration** — [**eza-community/eza**](https://github.com/eza-community/eza)
 
-### Zoxide
-**Smarter `cd` that learns your habits**
+- ### Zoxide
+  - **Smarter `cd` that learns your habits** — [**ajeetdsouza/zoxide**](https://github.com/ajeetdsouza/zoxide)
 
 ## Text Editing & Viewing
 
-### Neovim
-**Hyperextensible Vim-based text editor**
+- ### Neovim
+  - **Hyperextensible Vim-based text editor** — [**neovim/neovim**](https://github.com/neovim/neovim)
 
-### Bat
-**Enhanced `cat` with syntax highlighting**
+- ### Bat
+  - **Enhanced `cat` with syntax highlighting** — [**sharkdp/bat**](https://github.com/sharkdp/bat)
 
-### Sioyek
-**Keyboard-focused PDF reader optimized for academic work**
+- ### Sioyek
+  - **Keyboard-focused PDF reader optimized for academic work** — [**ahrm/sioyek**](https://github.com/ahrm/sioyek)
 
 ## Development Tools
 
-### Git
-**Distributed version control system**
+- ### Git
+  - **Distributed version control system** — [**git/git**](https://github.com/git/git)
 
-### GitHub CLI (gh)
-**Official GitHub command-line tool**
+- ### GitHub CLI (gh)
+  - **Official GitHub command-line tool** — [**cli/cli**](https://github.com/cli/cli)
 
 ## System Monitoring
 
-### Btop
-**Beautiful terminal-based system monitor**
+- ### Btop
+  - **Beautiful terminal-based system monitor** — [**aristocratos/btop**](https://github.com/aristocratos/btop)
 
-### Htop
-**Interactive process monitoring tool**
+- ### Htop
+  - **Interactive process monitoring tool** — [**htop-dev/htop**](https://github.com/htop-dev/htop)
 
-### S-tui
-**CPU monitoring and stress testing**
+- ### S-tui
+  - **CPU monitoring and stress testing** — [**amanusk/s-tui**](https://github.com/amanusk/s-tui)
 
-### Fastfetch
-**`Neofetch` alternative with faster performance**
+- ### Fastfetch
+  - **`Neofetch` alternative with faster performance** — [**fastfetch-cli/fastfetch**](https://github.com/fastfetch-cli/fastfetch)
 
 ## Productivity & Utilities
 
-### iCalBuddy
-**macOS calendar integration inside terminal and tmux**
+- ### iCalBuddy
+  - **macOS calendar integration inside terminal and tmux** — [**dkaluta/icalBuddy64**](https://github.com/dkaluta/icalBuddy64)
 
-### Thefuck
-**Auto-correct mistyped commands**
+- ### Thefuck
+  - **Auto-correct mistyped commands** — [**nvbn/thefuck**](https://github.com/nvbn/thefuck)
 
-### yt-dlp
-**Download videos from YouTube and other platforms**
+- ### yt-dlp
+  - **Download videos from YouTube and other platforms** — [**yt-dlp/yt-dlp**](https://github.com/yt-dlp/yt-dlp)
 
 ## Utility Scripts
 
-### Scripts
-**Collection of maintenance and utility scripts**
+- ### Scripts
+  - **Collection of maintenance and utility scripts**
 
 # Security Note
 
