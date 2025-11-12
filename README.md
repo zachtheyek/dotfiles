@@ -34,7 +34,7 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 The installation script supports four commands:
 
 | Command | Description |
-|---------|-------------|
+|:--------|:------------|
 | `stow` | Create symlinks (default) |
 | `unstow` | Remove symlinks |
 | `restow` | Update symlinks (remove + create) |
@@ -114,16 +114,16 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 ## Window Management & UI
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | Aerospace | i3-inspired tiling window manager for macOS | [nikitabobko/AeroSpace](https://github.com/nikitabobko/AeroSpace) |
 | Sketchybar | Highly customizable macOS menu bar replacement | [FelixKratz/SketchyBar](https://github.com/FelixKratz/SketchyBar) |
 | Karabiner | Powerful keyboard remapping for macOS | [pqrs-org/Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) |
 
 ## Shell & Terminal
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | iTerm2 | Feature-rich terminal emulator for macOS | [gnachman/iTerm2](https://github.com/gnachman/iTerm2) |
 | Zsh | Interactive shell with extensive customization | [zsh-users/zsh](https://github.com/zsh-users/zsh) |
 | Tmux | Terminal multiplexer + management for sessions, windows, and panes | [tmux/tmux](https://github.com/tmux/tmux) |
@@ -131,8 +131,8 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 ## File Management & Navigation
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | Yazi | Modern TUI file manager with image previews | [sxyazi/yazi](https://github.com/sxyazi/yazi) |
 | Fzf | Interactive fuzzy search for files, commands, and more | [junegunn/fzf](https://github.com/junegunn/fzf) |
 | Zoxide | Smarter `cd` that learns your habits | [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide) |
@@ -140,24 +140,24 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 ## Text Editing & Viewing
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | Neovim | Hyperextensible Vim-based text editor | [neovim/neovim](https://github.com/neovim/neovim) |
 | Sioyek | Keyboard-focused PDF reader optimized for academic work | [ahrm/sioyek](https://github.com/ahrm/sioyek) |
 | Bat | Enhanced `cat` with syntax highlighting | [sharkdp/bat](https://github.com/sharkdp/bat) |
 
 ## Development Tools
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | Git | Distributed version control system | [git/git](https://github.com/git/git) |
 | GitHub CLI (gh) | Official GitHub command-line tool | [cli/cli](https://github.com/cli/cli) |
 | SSH | Secure shell configuration for remote access and authentication | |
 
 ## System Monitoring
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | Btop | Beautiful terminal-based system monitor | [aristocratos/btop](https://github.com/aristocratos/btop) |
 | Htop | Interactive process monitoring tool | [htop-dev/htop](https://github.com/htop-dev/htop) |
 | S-tui | CPU monitoring and stress testing | [amanusk/s-tui](https://github.com/amanusk/s-tui) |
@@ -166,8 +166,8 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 ## Productivity & Utilities
 
-| Tool | Description | Repo |
-|------|-------------|------|
+| Tool | Description | Source |
+|:-----|:------------|:-------|
 | iCalBuddy | macOS calendar integration inside terminal and tmux | [dkaluta/icalBuddy64](https://github.com/dkaluta/icalBuddy64) |
 | Thefuck | Auto-correct mistyped commands | [nvbn/thefuck](https://github.com/nvbn/thefuck) |
 | yt-dlp | Download videos from YouTube and other platforms | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) |
