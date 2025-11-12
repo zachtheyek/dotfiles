@@ -1,12 +1,22 @@
-# Git
-git/.git-credentials
+# FzF
+fzf/.config/fzf/fzf-git.sh
+fzf/.config/fzf/fzf-theme.sh
 
 # GitHub
 gh/.config/gh/hosts.yml
 
+# Git
+git/.git-credentials
+
+# Karabiner 
+karabiner/.config/karabiner/automatic_backups/
+
 # SSH
 ssh/.ssh/*
-!ssh/.ssh/config
+# !ssh/.ssh/config
+
+# Tmux 
+tmux/.config/tmux/plugins/
 
 # Zsh 
 zsh/.zsh_secrets
