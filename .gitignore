@@ -13,7 +13,7 @@ karabiner/.config/karabiner/automatic_backups/
 
 # SSH
 ssh/.ssh/*
-# !ssh/.ssh/config
+!ssh/.ssh/config.example
 
 # Tmux 
 tmux/.config/tmux/plugins/
