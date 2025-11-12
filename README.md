@@ -72,6 +72,8 @@ Note that some tools require additional setup. For example:
 4. **Powerlevel10k**: Install the theme and fonts if needed
 5. **Karabiner-Elements**: Grant accessibility permissions in System Settings
 
+etc.
+
 Please reference the official docs if you're having trouble setting up a specific tool.
 
 Further, if you'd like to add your own package: 
