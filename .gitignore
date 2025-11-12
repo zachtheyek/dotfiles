@@ -1,6 +1,16 @@
 # Git
-.git-credentials
+git/.git-credentials
+
+# GitHub
+gh/.config/gh/hosts.yml
 
 # SSH
 ssh/.ssh/*
 !ssh/.ssh/config
+
+# Zsh 
+zsh/.zsh_secrets
+
+# Temporary packages/files
+tmp_brew/
+ZACH-READ.md
