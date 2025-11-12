@@ -89,7 +89,7 @@ echo "config=true" > my-tool/.config/my-tool/config.toml
 ./install.sh my-tool
 ```
 
-I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[^1] to be especially helpful for getting started with GNU Stow.
+I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) [^1] to be especially helpful for getting started with GNU Stow.
 
 # Troubleshooting
 
