@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>constantArguments</key>
+        <dict>
+            <key>includeCals</key>
+            <string>Personal</string>
+            <key>noCalendarNames</key>
+            <true />
+            <key>includeEventProps</key>
+            <string>title,datetime,location,url,attendees,notes</string>
+            <key>propertyOrder</key>
+            <string>title,datetime,location,url,attendees,notes</string>
+            <!-- <key>maxNumAttendees</key> -->
+            <!-- <number>5</number> -->
+            <key>formatOutput</key>
+            <true />
+            <key>separateByDate</key>
+            <true />
+            <key>showEmptyDates</key>
+            <true />
+            <key>showTodaysSection</key>
+            <true />
+            <key>noRelativeDates</key>
+            <true />
+            <key>dateFormat</key>
+            <string>%a %Y-%m-%d</string>
+            <key>timeFormat</key>
+            <string>%H:%M</string>
+        </dict>
+        <key>formatting</key>
+        <dict />
+    </dict>
+</plist>
