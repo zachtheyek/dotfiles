@@ -144,33 +144,33 @@ mv ~/.config/nvim ~/.config/nvim.backup
 - ### Fzf
   - **Interactive fuzzy search for files, commands, and more**: [**junegunn/fzf**](https://github.com/junegunn/fzf)
 
-- ### Eza
-  - **Enhanced `ls` with icons and git integration**: [**eza-community/eza**](https://github.com/eza-community/eza)
-
 - ### Zoxide
   - **Smarter `cd` that learns your habits**: [**ajeetdsouza/zoxide**](https://github.com/ajeetdsouza/zoxide)
+
+- ### Eza
+  - **Enhanced `ls` with icons and git integration**: [**eza-community/eza**](https://github.com/eza-community/eza)
 
 ## Text Editing & Viewing
 
 - ### Neovim
   - **Hyperextensible Vim-based text editor**: [**neovim/neovim**](https://github.com/neovim/neovim)
 
-- ### Bat
-  - **Enhanced `cat` with syntax highlighting**: [**sharkdp/bat**](https://github.com/sharkdp/bat)
-
 - ### Sioyek
   - **Keyboard-focused PDF reader optimized for academic work**: [**ahrm/sioyek**](https://github.com/ahrm/sioyek)
+
+- ### Bat
+  - **Enhanced `cat` with syntax highlighting**: [**sharkdp/bat**](https://github.com/sharkdp/bat)
 
 ## Development Tools
 
 - ### Git
   - **Distributed version control system**: [**git/git**](https://github.com/git/git)
 
-- ### SSH
-  - **Secure shell configuration for remote access and authentication**
-
 - ### GitHub CLI (gh)
   - **Official GitHub command-line tool**: [**cli/cli**](https://github.com/cli/cli)
+
+- ### SSH
+  - **Secure shell configuration for remote access and authentication**
 
 ## System Monitoring
 
