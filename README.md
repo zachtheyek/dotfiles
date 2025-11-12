@@ -89,7 +89,7 @@ echo "config=true" > my-tool/.config/my-tool/config.toml
 ./install.sh my-tool
 ```
 
-I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) [^1] to be especially helpful for getting started with GNU Stow.
+In this regard, I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[^1] to be especially helpful.
 
 # Troubleshooting
 
@@ -213,4 +213,4 @@ Configurations inspired by the broader open-source & dotfiles community. Special
 - The Catppuccin team for the beautiful color scheme
 - The GNU Stow maintainers for the simple yet powerful tool
 
-[^1] jk lol, here you go: https://youtu.be/y6XCebnB9gs?si=APiYpB2Mvqn-gcA3
+[^1]: jk lol, here you go: https://youtu.be/y6XCebnB9gs?si=APiYpB2Mvqn-gcA3
