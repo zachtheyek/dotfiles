@@ -173,7 +173,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 # Security Note
 
-Sensitive files were sanitized or completely excluded via `.gitignore`. This includes, but is not limited to, login credentials, API keys, SSH public-private key pairs, secrets, sensitive environment variables, etc. 
+Sensitive files were either sanitized (e.g. `ssh/.ssh/config.example`) or completely excluded via `.gitignore`. This includes, but is not limited to, login credentials, API keys, SSH public-private key pairs, secrets, sensitive environment variables, etc. 
 
 > [!CAUTION]
 > If you choose to share your own dotfiles publicly -- be very careful what you commit to version control!
@@ -188,5 +188,6 @@ Configurations inspired by the broader open-source & dotfiles community. Special
 - NVChad for the excellent Neovim framework
 - The Catppuccin team for the beautiful & extensible color scheme
 - The GNU Stow maintainers for the simple yet powerful tool
+- And YouTubers [@Josean Martinez](https://www.youtube.com/@joseanmartinez), [@DevOps Toolbox](https://www.youtube.com/@devopstoolbox), and [@typecraft](https://www.youtube.com/@typecraft_dev) (among others) for their extensive content libraries that inspired much of this work
 
 [^1]: jk lol, here you go: https://youtu.be/y6XCebnB9gs?si=APiYpB2Mvqn-gcA3
