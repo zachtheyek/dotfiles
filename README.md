@@ -1,12 +1,13 @@
 This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package is tied to a tool (or set of tools), and lives in its own directory that mimics the expected configuration structure relative to `$HOME`. When invoked, Stow will create symlinks to the specified packages in this repository throughout your machine, such that each tool may function as normal, while retaining a unified control hub for the user. It's recommended to make edits to the configs from the repository itself, rather than through the symlinks (to avoid artifacts that become out-of-sync over time). Naturally, you'll need to have a tool installed beforehand for the package to take effect (usually just `brew install X`;  refer to the official docs for further instruction). 
 
-It goes without saying: all packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy comes down to: 
-
-- Keyboard-first, with a preference for TUIs and vim bindings
-- Consistent & productive UI > ricing potential
-  - Optimized with a single 27" monitor in mind
-- Deep integration of plugins 
-  - Bonus points if it's open-source, community-driven, and well-maintained
+> [!NOTE]
+> All packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy comes down to: 
+> 
+> - Keyboard-first, with a preference for TUIs and vim bindings
+> - Consistent & productive UI > ricing potential
+>   - Optimized with a single 27" monitor in mind
+> - Deep integration of plugins 
+>   - Bonus points if it's open-source, community-driven, and well-maintained
 
 # Installation
 
@@ -206,7 +207,8 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 Sensitive files were sanitized or completely excluded via `.gitignore`. This includes, but is not limited to, login credentials, API keys, SSH public-private key pairs, secrets, sensitive environment variables, etc. 
 
-If you choose to share your own dotfiles publically -- be very careful what you commit to version control!
+> [!CAUTION]
+> If you choose to share your own dotfiles publically -- be very careful what you commit to version control!
 
 # License
 
