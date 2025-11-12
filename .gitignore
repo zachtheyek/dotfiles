@@ -22,5 +22,6 @@ tmux/.config/tmux/plugins/
 zsh/.zsh_secrets
 
 # Temporary packages/files
-tmp_brew/
+TODO.md
 ZACH-READ.md
+tmp_brew/
