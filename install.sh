@@ -57,7 +57,7 @@ fi
 # Map command to stow flags
 case "$COMMAND" in
     stow)
-        STOW_CMD="stow -R"
+        STOW_CMD="stow -S"
         ACTION_VERB="Stowing"
         ;;
     unstow)

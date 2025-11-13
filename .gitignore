@@ -8,7 +8,7 @@ git/.git-credentials
 # GitHub
 gh/.config/gh/hosts.yml
 
-# Karabiner 
+# Karabiner
 karabiner/.config/karabiner/automatic_backups/
 
 # SSH
