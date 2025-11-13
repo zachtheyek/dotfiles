@@ -1,11 +1,10 @@
 # TODO:
-# spaces {'m', 's', 't', 'w'} aren't spaced properly 
-# spaces don't updated when switched (issue with Aerospace hook?)
-# empty spaces still appear in bar
-# add additional widgets (battery, weather, datetime, upcoming events, vpn)
-# ^ think about conflicts with tmux, nvim, zsh info
-# Note, Aerospace has i3-like UI elements now. try to incorporate into sketchybar? 
-# Note, also try to incorporate icalBuddy into sketchybar? 
+# Mimic aerospace built-in workspaces UI (show all available workspaces, highlight currently active workspace)
+#  # lettered spaces (m, s, t, w) aren't displaying properly rn
+#  # spaces don't updated when switched (issue with Aerospace hooks?)
+#  # empty spaces still appear in bar
+# Add battery, wifi/ethernet (+ vpn), and weather info (temp, humidity, AQI, etc.) to menu bar
+#  # should i add calendar events too (icalBuddy)? or leave that functionality for tmux statusbar?
 
 #!/usr/bin/env sh
 

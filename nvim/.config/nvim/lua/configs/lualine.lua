@@ -1,14 +1,14 @@
 -- TODO: come back to this later
--- left: mode, harpoon, filename (* to indicate whether file is unsaved)
--- right: git branch & diffs, code diagnostics, todo's
--- additional: LSP & conda env & docker/kube stuff
+-- left: mode, filename (* to indicate whether file is unsaved), git info (branch & diffs)
+-- center: harpoon (similar to aerospace/i3/tmux windows UI, where all numbers are shown & active one highlighted)
+-- right: LSP & code diagnostics (+ conda env?), todo's, docker/kube/gcloud info
+-- -- remove filename & cursor position
 -- https://github.com/nvim-lualine/lualine.nvim?tab=readme-ov-file#changing-components-in-lualine-sections
 -- https://github.com/nvim-lualine/lualine.nvim/wiki/Component-snippets
 -- https://github.com/b0o/incline.nvim/discussions/categories/showcase
 -- https://github.com/b0o/incline.nvim/discussions/64
 -- note: make lualine transparency match terminal & nvim (see autocmds.lua)
 -- note: add lualine indicator for whether current nvim session is being tracked (see vimobsession.lua)
--- note: remove parent directory indicator on right (redundant with tmux statusline)
 
 -- -- Harpoon
 -- local function harpoon_component()

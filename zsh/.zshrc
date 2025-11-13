@@ -1,4 +1,5 @@
 # TODO: split aliases into a separate file & source from .zshrc
+# TODO: display docker/kube info next to conda & gcloud
 
 ### Interactive shell config (prompt, aliases, plugins, etc.)
 
