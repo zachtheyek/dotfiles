@@ -1,4 +1,4 @@
-# Stow configuration
+# The --target flag sets the directory to stow from (uses parent directory by default) 
 --target=~
 
 # The --ignore flag sets universal patterns (using perl regex) to be ignored by ALL stow operations
@@ -21,12 +21,6 @@
 --ignore=^/LICENSE.*
 --ignore=^/COPYING
 
-# iTerm configs (sourced directly via iTerm2 preferences. no need to symlink)
---ignore=com\.googlecode\.iterm2\.plist
-
-# Claude local configs
---ignore=^/\.claude/settings\.local\.json$
-
 # Editor artifacts
 --ignore=Session\.vim
 --ignore=\.swp$
@@ -41,6 +35,12 @@
 # Logs/outputs
 --ignore=\.log$
 --ignore=\.out$
+
+# iTerm configs (sourced directly via iTerm2 preferences. no need to symlink)
+--ignore=com\.googlecode\.iterm2\.plist
+
+# Claude local configs
+--ignore=^/\.claude/settings\.local\.json$
 
 # Sanitized example files (these should be committed but not stowed)
 --ignore=\.example$
