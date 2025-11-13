@@ -1,0 +1,8 @@
+# GitHub CLI Hosts Configuration Example
+# This is a sanitized example showing the structure of GitHub CLI hosts configuration.
+# Copy this file to 'hosts.yml' and update with your actual credentials.
+
+github.com:
+    oauth_token: ghp_YourGitHubPersonalAccessToken
+    user: your-github-username
+    git_protocol: https
