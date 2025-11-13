@@ -1,8 +1,10 @@
 # Git (sensitive)
 git/.git-credentials
+!git/.git-credentials.example
 
 # GitHub (sensitive)
 gh/.config/gh/hosts.yml
+!gh/.config/gh/hosts.yml.example
 
 # SSH (sensitive)
 ssh/.ssh/*

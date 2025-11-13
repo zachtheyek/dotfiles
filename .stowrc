@@ -8,8 +8,19 @@
 --ignore=\.localized$
 
 # Stow's own ignore files (so it doesn't try to stow itself)
+--ignore=^/\.stow-global-ignore$
 --ignore=^/\.stow-local-ignore$
 --ignore=^/\.stowrc$
+
+# Git files 
+\.git
+\.gitignore
+\.gitmodules
+
+# Docs
+^/README.*
+^/LICENSE.*
+^/COPYING
 
 # iTerm configs (sourced directly via iTerm2 preferences. no need to symlink)
 --ignore=com\.googlecode\.iterm2\.plist
