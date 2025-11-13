@@ -1,5 +1,5 @@
 -- TODO: come back to this later
--- left: mode, filename (* to indicate whether file is unsaved), file permissions, git info (branch & diffs)
+-- left: mode, filename (* to indicate whether file is unsaved), file permissions (read, write, etc.), git info (branch & diffs)
 -- center: harpoon (similar to aerospace/i3/tmux windows UI, where all numbers are shown & active one highlighted)
 -- right: LSP & code diagnostics (+ conda env?), todo's, docker/kube/gcloud info
 -- -- remove parent directory name & cursor position
