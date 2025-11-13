@@ -1,3 +1,5 @@
+-- TODO: add keybinding for :Obsess (starting/pausing session tracking)
+
 local M = {}
 
 function M.setup()

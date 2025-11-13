@@ -209,6 +209,7 @@ export LESSHISTFILE="$HOME/.local/state/less/history"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# TODO: figure out how to effectively use bitwarden-cli
 ### Bitwarden CLI configs
 source ~/.zsh_secrets
 alias bw_up="bw login --apikey && bw unlock --passwordenv BW_PASSWORD"
