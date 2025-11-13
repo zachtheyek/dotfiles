@@ -1,14 +1,14 @@
 # Git (sensitive)
 git/.git-credentials
-!git/.git-credentials.example
+!git/.git-credentials.example  # Allow example
 
 # GitHub (sensitive)
 gh/.config/gh/hosts.yml
-!gh/.config/gh/hosts.yml.example
+!gh/.config/gh/hosts.yml.example  # Allow example
 
 # SSH (sensitive)
 ssh/.ssh/*
-!ssh/.ssh/config.example
+!ssh/.ssh/config.example  # Allow example
 
 # Zsh (sensitive)
 zsh/.zsh_secrets
