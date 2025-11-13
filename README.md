@@ -15,6 +15,8 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 
 ## Prerequisites
 
+Assuming you have git and homebrew on your machine, 
+
 1. **Install GNU Stow**:
    ```bash
    brew install stow
