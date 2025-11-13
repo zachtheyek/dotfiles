@@ -1,7 +1,9 @@
 name: gitleaks
 on:
-  pull_request:
   push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
   workflow_dispatch:
 jobs:
   scan:
