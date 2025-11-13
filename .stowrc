@@ -1,8 +1,7 @@
 # Stow configuration
-# This file sets universal patterns (using perl regex) to be ignored by ALL stow operations
-
 --target=~
 
+# The --ignore flag sets universal patterns (using perl regex) to be ignored by ALL stow operations
 # macOS system files
 --ignore=\.DS_Store$
 --ignore=\.localized$
@@ -13,14 +12,14 @@
 --ignore=^/\.stowrc$
 
 # Git files 
-\.git
-\.gitignore
-\.gitmodules
+--ignore=\.git
+--ignore=\.gitignore
+--ignore=\.gitmodules
 
 # Docs
-^/README.*
-^/LICENSE.*
-^/COPYING
+--ignore=^/README.*
+--ignore=^/LICENSE.*
+--ignore=^/COPYING
 
 # iTerm configs (sourced directly via iTerm2 preferences. no need to symlink)
 --ignore=com\.googlecode\.iterm2\.plist
