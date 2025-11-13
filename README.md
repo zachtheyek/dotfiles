@@ -9,7 +9,7 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 > - Deep integration of plugins 
 >   - Bonus points if it's open-source, community-driven, and well-maintained
 > - macOS only
->    - I'm actively working on an Arch Linux port, so stay tuned for that!
+>    - Though I'm actively working on an Arch Linux port, so stay tuned for that!
 
 # Installation
 
