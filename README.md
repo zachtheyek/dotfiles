@@ -125,6 +125,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Sketchybar | Highly customizable macOS menu bar replacement | [FelixKratz/SketchyBar](https://github.com/FelixKratz/SketchyBar) |
 | Karabiner | Powerful keyboard remapping for macOS | [pqrs-org/Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) |
 
+
 ## Shell & Terminal
 
 | Tool | Description | Source |
@@ -133,6 +134,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Zsh | Interactive shell with extensive customization | [zsh-users/zsh](https://github.com/zsh-users/zsh) |
 | Tmux | Terminal multiplexer + management for sessions, windows, and panes | [tmux/tmux](https://github.com/tmux/tmux) |
 | Envman | Centralized management of shell variables, aliases, and functions | [bitrise-io/envman](https://github.com/bitrise-io/envman) |
+
 
 ## File Management & Navigation
 
@@ -143,6 +145,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Zoxide | Smarter `cd` that learns your habits | [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide) |
 | Eza | Enhanced `ls` with icons and git integration | [eza-community/eza](https://github.com/eza-community/eza) |
 
+
 ## Text Editing & Viewing
 
 | Tool | Description | Source |
@@ -151,6 +154,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Sioyek | Keyboard-focused PDF reader optimized for academic work | [ahrm/sioyek](https://github.com/ahrm/sioyek) |
 | Bat | Enhanced `cat` with syntax highlighting | [sharkdp/bat](https://github.com/sharkdp/bat) |
 
+
 ## Development Tools
 
 | Tool | Description | Source |
@@ -158,6 +162,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Git | Distributed version control system | [git/git](https://github.com/git/git) |
 | GitHub CLI (gh) | Official GitHub command-line tool | [cli/cli](https://github.com/cli/cli) |
 | SSH | Secure shell configuration for remote access and authentication | |
+
 
 ## System Monitoring
 
@@ -169,6 +174,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Fastfetch | `Neofetch` alternative with faster performance | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 | Neofetch | System information tool with ASCII art | [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) |
 
+
 ## Productivity & Utilities
 
 | Tool | Description | Source |
@@ -178,12 +184,16 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | yt-dlp | Download videos from YouTube and other platforms | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) |
 | Scripts | Personal collection of maintenance and utility scripts | |
 
+
 # Security Note
 
-Sensitive files were either sanitized, or completely excluded via `.gitignore`. This includes, but is not limited to, login credentials, API keys, SSH public-private key pairs, secrets, sensitive environment variables, etc. 
+Sensitive files were either sanitized, or completely excluded via `.gitignore`. This includes, but is not limited to, API keys/tokens, SSH public-private key pairs, sensitive environment variables, passwords, etc. 
 
 > [!CAUTION]
-> If you choose to share your own dotfiles publicly -- be very careful what you commit to version control!
+> If you choose to share your own dotfiles publicly -- be very careful what you commit to version control! Rotate your secrets & ammend the logs ASAP if something goes wrong.
+
+> [!TIP]
+> Use [gitleaks](https://github.com/gitleaks/gitleaks) as a pre-commit hook and CI/CD action to automate the scanning of your repo for leaked secrets. See `.github/workflows/gitleaks.yml` & `.pre-commit-config.yaml`.
 
 # License
 
