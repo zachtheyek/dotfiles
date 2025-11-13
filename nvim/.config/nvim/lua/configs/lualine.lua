@@ -1,8 +1,8 @@
 -- TODO: come back to this later
--- left: mode, filename (* to indicate whether file is unsaved), git info (branch & diffs)
+-- left: mode, filename (* to indicate whether file is unsaved), file permissions, git info (branch & diffs)
 -- center: harpoon (similar to aerospace/i3/tmux windows UI, where all numbers are shown & active one highlighted)
 -- right: LSP & code diagnostics (+ conda env?), todo's, docker/kube/gcloud info
--- -- remove filename & cursor position
+-- -- remove parent directory name & cursor position
 -- https://github.com/nvim-lualine/lualine.nvim?tab=readme-ov-file#changing-components-in-lualine-sections
 -- https://github.com/nvim-lualine/lualine.nvim/wiki/Component-snippets
 -- https://github.com/b0o/incline.nvim/discussions/categories/showcase
