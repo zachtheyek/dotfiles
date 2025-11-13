@@ -1,1 +1,36 @@
+# Stow configuration
+# This file sets universal patterns (using perl regex) to be ignored by ALL stow operations
+
 --target=~
+
+# macOS system files
+--ignore=\.DS_Store$
+--ignore=\.localized$
+
+# Stow's own ignore files (so it doesn't try to stow itself)
+--ignore=^/\.stow-local-ignore$
+--ignore=^/\.stowrc$
+
+# iTerm configs (sourced directly via iTerm2 preferences. no need to symlink)
+--ignore=com\.googlecode\.iterm2\.plist
+
+# Claude local configs
+--ignore=^/\.claude/settings\.local\.json$
+
+# Editor artifacts
+--ignore=Session\.vim
+--ignore=\.swp$
+--ignore=\.swo$
+
+# Caches/backups
+--ignore=^/\.cache
+--ignore=\.tmp$
+--ignore=\.bak$
+--ignore=\.backup$
+
+# Logs/outputs
+--ignore=\.log$
+--ignore=\.out$
+
+# Sanitized example files (these should be committed but not stowed)
+--ignore=\.example$
