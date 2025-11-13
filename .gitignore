@@ -1,25 +1,25 @@
+# Git (sensitive)
+git/.git-credentials
+
+# GitHub (sensitive)
+gh/.config/gh/hosts.yml
+
+# SSH (sensitive)
+ssh/.ssh/*
+!ssh/.ssh/config.example
+
+# Zsh (sensitive)
+zsh/.zsh_secrets
+
 # FzF (submodules)
 fzf/.config/fzf/fzf-git.sh
 fzf/.config/fzf/fzf-theme.sh
 
-# Git
-git/.git-credentials
-
-# GitHub
-gh/.config/gh/hosts.yml
-
-# Karabiner
-karabiner/.config/karabiner/automatic_backups/
-
-# SSH
-ssh/.ssh/*
-!ssh/.ssh/config.example
-
 # Tmux (submodules)
 tmux/.config/tmux/plugins/
 
-# Zsh 
-zsh/.zsh_secrets
+# Karabiner (backups)
+karabiner/.config/karabiner/automatic_backups/
 
 # Temporary packages/files
 TODO.md
