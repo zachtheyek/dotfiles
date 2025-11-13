@@ -5,9 +5,9 @@
 #   ./install.sh [command] [packages...]
 #
 # Commands:
-#   stow      Create symlinks (default)
+#   stow      Create symlinks
 #   unstow    Remove symlinks
-#   restow    Update symlinks
+#   restow    Update symlinks (default)
 #   dry-run   Show what would happen
 #
 # Packages: 
@@ -15,9 +15,10 @@
 #   leave empty to select all (default)
 #
 # Examples:
-#   ./install.sh                            # stow all packages
-#   ./install.sh aerospace nvim zsh         # stow only aerospace, nvim, and zsh
-#   ./install.sh restow                     # restow all packages
+#   ./install.sh                            # restow all packages (default)
+#   ./install.sh stow                       # stow all packages
+#   ./install.sh unstow aerospace nvim      # unstow only aerospace and nvim
+#   ./install.sh restow zsh                 # restow only zsh
 #   ./install.sh dry-run tmux               # dry-run for tmux only
 # 
 # Note, if it's your first run, don't forget to make the script executable: chmod +x install.sh
@@ -39,7 +40,7 @@ get_all_packages() {
 ALL_PACKAGES=($(get_all_packages))
 
 # Parse first argument as command if it matches known commands
-COMMAND="stow"
+COMMAND="restow"
 PACKAGES=()
 
 if [[ "$1" =~ ^(stow|unstow|restow|dry-run)$ ]]; then

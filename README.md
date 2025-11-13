@@ -39,9 +39,9 @@ The installation script supports four commands:
 
 | Command | Description |
 |:--------|:------------|
-| `stow` | Create symlinks (default) |
+| `stow` | Create symlinks |
 | `unstow` | Remove symlinks |
-| `restow` | Update symlinks (remove + create) |
+| `restow` | Update symlinks (remove + create) (`default`) |
 | `dry-run` | Show what would happen without making changes |
 
 
@@ -50,17 +50,20 @@ Each command can be followed up with a space-separated list of packages to be op
 **Examples:**
 
 ```bash
-# Install all packages
+# Restow all packages (default)
 ./install.sh
 
-# Install specific packages
-./install.sh aerospace nvim zsh
+# Stow all packages
+./install.sh stow
 
-# Uninstall specific packages
+# Stow specific packages
+./install.sh stow aerospace nvim zsh
+
+# Unstow specific packages
 ./install.sh unstow tmux
 
-# Update all packages (useful after git pull)
-./install.sh restow
+# Restow specific packages (useful after git pull)
+./install.sh restow zsh
 
 # Preview changes without applying them
 ./install.sh dry-run
