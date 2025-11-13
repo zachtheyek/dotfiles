@@ -10,9 +10,6 @@ gh/.config/gh/hosts.yml
 ssh/.ssh/*
 !ssh/.ssh/config.example  # Allow example
 
-# Zsh (sensitive)
-zsh/.zsh_secrets
-
 # FzF (submodules)
 fzf/.config/fzf/fzf-git.sh
 fzf/.config/fzf/fzf-theme.sh

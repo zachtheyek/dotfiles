@@ -1,5 +1,4 @@
 # TODO: split aliases into a separate file & source from .zshrc
-# TODO: display docker/kube info next to conda & gcloud
 
 ### Interactive shell config (prompt, aliases, plugins, etc.)
 
@@ -209,15 +208,44 @@ export LESSHISTFILE="$HOME/.local/state/less/history"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# TODO: figure out how to effectively use bitwarden-cli
-### Bitwarden CLI configs
-source ~/.zsh_secrets
+# TODO: figure out how to actually use bitwarden-cli effectively, or whether we should migrate to pass
+# Bitwarden CLI configs
+# NOTE: if we need bw creds in scripts/non-interactive contexts, move load_keychain_secrets to .zshenv
+load_keychain_secrets() {
+  local secrets_list=(
+    "bw_clientid:BW_CLIENTID"
+    "bw_clientsecret:BW_CLIENTSECRET"
+    "bw_password:BW_PASSWORD"
+  )
+
+  for entry in "${secrets_list[@]}"; do
+    local service_name="${entry%%:*}"   # text before colon
+    local env_name="${entry##*:}"       # text after colon
+    local value
+
+    # Fetch secrets silently from keychain
+    value=$(security find-generic-password -s "$service_name" -w 2>/dev/null)
+    # Store as environment variables
+    export "$env_name=$value"
+  done
+}
+
+# BUG: 
+# Suppress output to avoid "value=..." exposing our secrets every time .zshrc is sourced
+# Root cause unknown - likely oh-my-zsh plugin or shell hook intercepting exports
+# Will assume it works without issue otherwise for now
+load_keychain_secrets >/dev/null 2>&1
+
 alias bw_up="bw login --apikey && bw unlock --passwordenv BW_PASSWORD"
 alias bw_down="bw lock && bw logout"
 alias bw_retry="bw lock && bw logout && bw login --apikey && bw unlock --passwordenv BW_PASSWORD"
 
 # Kubernetes configs
 source <(kubectl completion zsh)
+
+# NOTE: how do i use this again?
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # Conda configs
 # >>> conda initialize >>>
@@ -250,10 +278,6 @@ unset __conda_setup
 # This section can be safely removed at any time if needed.
 [[ ! -r '/Users/zach/.opam/opam-init/init.zsh' ]] || source '/Users/zach/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
-
-# NOTE: how do i use this again?
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/zach/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/zach/google-cloud-sdk/path.zsh.inc'; fi
