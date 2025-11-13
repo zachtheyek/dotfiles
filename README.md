@@ -5,9 +5,11 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 > 
 > - Keyboard-first, with a preference for TUIs and vim bindings
 > - Consistent & productive UI > ricing potential
->   - Optimized with a single 27" monitor in mind
+>   - All UI is optimized for a single 27" 4k 120Hz monitor
 > - Deep integration of plugins 
 >   - Bonus points if it's open-source, community-driven, and well-maintained
+> - macOS only
+>    - I'm actively working on an Arch Linux port, so stay tuned for that!
 
 # Installation
 
