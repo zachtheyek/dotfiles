@@ -1,3 +1,5 @@
+-- BUG: cmdline isn't transparent like the other UI elements (buffer, filetree, harpoon menu, telescope picker)
+
 return {
     cmdline = {
         enabled = true,

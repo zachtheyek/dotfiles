@@ -1,6 +1,7 @@
 -- FIX:
 -- why does "no signature help available" notification keep popping up?
 -- i think it has something to do with autopairs (specifically when working with "(" or ")")
+-- BUG: notifications aren't transparent like the other UI elements (buffer, filetree, harpoon menu, telescope picker)
 
 local M = {}
 
