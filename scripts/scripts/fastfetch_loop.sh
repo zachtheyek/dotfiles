@@ -2,6 +2,6 @@
 
 while true; do 
     fastfetch
-    sleep 60 # seconds
+    sleep 5  # seconds
     clear
 done

@@ -3,5 +3,7 @@
 while true; do
     btop
     echo "btop exited, restarting in 5 seconds..."
-    sleep 5
+    echo "Press Ctrl+C to cancel restart."
+    sleep 5  # seconds
+    clear
 done

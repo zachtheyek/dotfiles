@@ -2,6 +2,7 @@
 
 # Exit with help message if no arguments provided
 if [ -z "$1" ]; then
+    echo "No arguments provided."
     echo "Usage: $0 <ssh-destination>"
     echo "Example: $0 user@hostname"
     echo "         $0 my-server"
@@ -21,4 +22,5 @@ while true; do
     echo "SSH connection closed (exit code: $EXIT_CODE), reconnecting in 5 seconds..."
     echo "Press Ctrl+C to cancel reconnection."
     sleep 5
+    clear
 done
