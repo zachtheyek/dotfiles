@@ -162,6 +162,9 @@ ff() {
 }
 ### TODO: fix fzf (end)
 
+# Prefer fd over find
+alias find="fd"
+
 # Prefer ripgrep over grep
 alias grep="rg"
 
