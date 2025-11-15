@@ -28,7 +28,7 @@ Assuming you have git and homebrew on your machine,
    cd ~/dotfiles
    ```
 
-3. **Make the install script executable** (first time only):
+3. **Make the install script executable**:
    ```bash
    chmod +x install.sh
    ```
