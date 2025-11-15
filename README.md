@@ -1,15 +1,18 @@
 This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to centralize, manage, and distribute dotfiles across your machine. Each package is tied to a tool (or set of tools), and lives in its own directory that mimics the expected configuration structure relative to `$HOME`. When invoked, Stow will create symlinks to the specified packages in this repository throughout your machine, such that each tool may function as normal, while retaining a unified control hub for the user. Once setup, it's recommended you make edits to the configs directly from the repository itself, rather than through the symlinks, to avoid artifacts that become out-of-sync over time. Naturally, you'll need to have a given tool installed beforehand for the corresponding package to take effect (usually just `brew install X`;  refer to the official docs for further instruction). 
 
 > [!NOTE]
-> All packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy comes down to: 
+> All packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy, in descending order of importance: 
 > 
-> - Keyboard-first, with a preference for TUIs and vim bindings
-> - Consistent & productive UI > ricing potential
->   - All UI is optimized for a single 27" 4k 120Hz monitor
-> - Deep integration of plugins 
->   - Bonus points if it's open-source, community-driven, and well-maintained
-> - macOS only
+>  - Keyboard-first, with a strong preference for vim bindings & TUIs
+>    - The less time I spend thinking about where to place my fingers, or what app I need to go to, the more time I spend actually coding
+>  - Consistent UI > ricing potential
+>    - Everything is optimized for a single 27" 4k 120Hz monitor. I don't believe in any other monitor setup
+>  - UNIX principle: tools should do one thing well
+>    - I generally don't like all-in-one solutions, though it's not necessarily a strict boundary
+>    - Bonus points if the tool is open-source, community-driven, and well-maintained
+>  - macOS only
 >    - Though I'm actively working on an Arch Linux port, so stay tuned for that!
+>    - Windows is trash :/
 
 # Installation
 
