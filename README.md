@@ -191,7 +191,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 Sensitive files were either sanitized, or completely excluded via `.gitignore`. This includes, but is not limited to, API keys/tokens, SSH public-private key pairs, sensitive environment variables, passwords, etc. 
 
 > [!CAUTION]
-> If you choose to share your own dotfiles publicly -- be very careful what you commit to version control! Rotate your secrets & ammend the logs ASAP if something goes wrong.
+> If you choose to share your own dotfiles publicly -- be very careful what you commit to version control! Rotate your secrets & amend the logs ASAP if something goes wrong.
 
 > [!TIP]
 > Use [gitleaks](https://github.com/gitleaks/gitleaks) as a pre-commit hook and CI/CD action to automate the scanning of your repo for leaked secrets. See `.github/workflows/gitleaks.yml` & `.pre-commit-config.yaml`.
