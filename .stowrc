@@ -40,7 +40,7 @@
 --ignore=com\.googlecode\.iterm2\.plist
 
 # Claude local configs
---ignore=^/\.claude/settings\.local\.json$
+--ignore=\.claude/settings\.local\.json$
 
 # Sanitized example files (these should be committed but not stowed)
 --ignore=\.example$
