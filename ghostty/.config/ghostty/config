@@ -1,3 +1,5 @@
+# TODO: delete iTerm2 artifacts and configs from device once Ghostty workflow matures
+
 theme = catppuccin-mocha.conf
 
 background-opacity = 0.8
