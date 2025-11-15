@@ -22,7 +22,7 @@ while true; do
     echo "Hourly Weather Report: $(date '+%a %b %d %Y, %H:%M:%S (UTC%z)' | sed 's/+\([0-9]\{2\}\)[0-9]\{2\}/+\1/' | sed 's/-\([0-9]\{2\}\)[0-9]\{2\}/-\1/')"
 
     # Retry loop
-    max_attempts=30  # Try for 30 mins max
+    max_attempts=30  # Try for 15 mins max
     num_attempts=0
     outputs=()
     while [ $num_attempts -lt $max_attempts ]; do
@@ -37,7 +37,7 @@ while true; do
             outputs+=("Curl attempt $num_attempts/$max_attempts: $curl_output")
             # If more attempts left, sleep & try again later
             if [ $num_attempts -lt $max_attempts ]; then
-                sleep 60  # seconds
+                sleep 30  # seconds
             # Else give up & flush errors into stdout 
             else
                 echo "Curl failed after $max_attempts attempts:"
