@@ -86,13 +86,13 @@ Further, if you'd like to add your own package:
 
 1. Create a new directory in this repository with the package name
 2. Add your config files in the same structure as they appear in `$HOME`
-3. Run `./install.sh <package-name>` to symlink it
+3. Run `./install.sh stow <package-name>` to symlink it
 
 Example:
 ```bash
 mkdir -p my-tool/.config/my-tool
 echo "config=true" > my-tool/.config/my-tool/config.toml
-./install.sh my-tool
+./install.sh stow my-tool
 ```
 
 I found this [video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[^1] to be especially helpful for understanding the underlying workflow.
