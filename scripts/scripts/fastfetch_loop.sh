@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 while true; do 
     fastfetch
