@@ -1,3 +1,12 @@
+-- BUG:
+-- error when terminal is open & pane is resized
+-- Error detected while processing VimResized Autocommands for "*":
+-- Error executing lua callback: vim/_editor.lua:0: VimResized Autocommands for "*"..script nvim_exec2() called at VimResized Autocommands for "*":0, line 1: Vim(normal):Can't re-enter normal mode from terminal mode
+-- stack traceback:
+-- 	[C]: in function 'nvim_exec2'
+-- 	vim/_editor.lua: in function 'cmd'
+-- 	/Users/zach/.config/nvim/lua/autocmds.lua:35: in function </Users/zach/.config/nvim/lua/autocmds.lua:34>
+
 -- NOTE: FTerm instances are not persisted across sessions. For long-running processes, use tmux panes
 local M = {}
 

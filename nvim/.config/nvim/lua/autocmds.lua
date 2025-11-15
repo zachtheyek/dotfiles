@@ -27,7 +27,7 @@ autocmd({ "CursorMoved" }, {
     end,
 })
 
--- BUG: cursor position moves when zooming in/out of tmux-nvim pane. should stay fixed & instead center buffer on new cursor position
+-- BUG: cursor position moves when zooming in/out of tmux-nvim pane. should stay fixed & instead center buffer on cursor position when window size changes
 autocmd({ "VimResized" }, {
     group = center_group,
     pattern = "*",

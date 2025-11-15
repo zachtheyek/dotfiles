@@ -8,12 +8,18 @@ font-size = 14
 font-thicken = true
 adjust-cell-width = -10%
 
-# BUG: blinking not disabled
+# BUG: blinking not disabled in Ghostty shell (not a problem in tmux shell)
 # cursor-style-blink = false
 
+# Hides mouse immediately when typing
 mouse-hide-while-typing = true
 
+# Treat either option key as alt
 macos-option-as-alt = true
+
+# Use standard bracketed paste, instead of CSI u-mode 
+# Prevents unwanted escape sequences during paste (e.g. [27;5;106~)
+clipboard-paste-bracketed-safe = false
 
 # Don't confirm before quitting application
 confirm-close-surface = false
