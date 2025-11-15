@@ -1,0 +1,20 @@
+theme = catppuccin-mocha.conf
+
+background-opacity = 0.8
+background-blur-radius = 20 
+
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+font-thicken = true
+adjust-cell-width = -10%
+
+# BUG: blinking not disabled
+# cursor-style-blink = false
+
+mouse-hide-while-typing = true
+
+macos-option-as-alt = true
+
+# Don't confirm before quitting application
+confirm-close-surface = false
+quit-after-last-window-closed = true
