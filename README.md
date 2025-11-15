@@ -11,10 +11,10 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 >  - UNIX principle: tools should do one thing well
 >    - I generally don't like all-in-one solutions, though it's not necessarily a strict boundary
 >    - Bonus points if the tool is open-source, community-driven, and well-maintained
->  - macOS only, I minimally factor cross-platform compatibility into my tool selection
->    - Windows is trash :/
+>  - macOS only, I don't particularly care about cross-platform compatibility in my tool selection
 >    - Linux is really cool, it just lacks some core features/software that I've come to rely on
 >      - Though I'm actively working on an Arch Linux port, so stay tuned for that!
+>    - Windows is ass from a butt :/
 
 # Installation
 
