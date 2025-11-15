@@ -1,5 +1,23 @@
 #!/bin/bash
 
+# Parse CLI args
+location="Kuala-Lumpur"  # Default location
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -l|--location)
+            location="$2"
+            shift 2
+            ;;
+        *)
+            echo "Unknown flag provided: $1"
+            echo "Usage: $0 [-l|--location LOCATION]"
+            echo "Example: $0 -l Kuala-Lumpur"
+            echo "         $0 --location Beijing"
+            exit 1
+            ;;
+    esac
+done
+
 while true; do
     echo "Hourly Weather Report: $(date '+%a %b %d %Y, %H:%M:%S (UTC%z)' | sed 's/+\([0-9]\{2\}\)[0-9]\{2\}/+\1/' | sed 's/-\([0-9]\{2\}\)[0-9]\{2\}/-\1/')"
 
@@ -9,7 +27,7 @@ while true; do
     outputs=()
     while [ $num_attempts -lt $max_attempts ]; do
         num_attempts=$((num_attempts + 1))
-        curl_output=$(curl v2d.wttr.in/Kuala-Lumpur 2>&1)
+        curl_output=$(curl v2d.wttr.in/$location 2>&1)
         # If curl was successful, print output & break retry loop
         if [ $? -eq 0 ]; then
             echo "$curl_output"
