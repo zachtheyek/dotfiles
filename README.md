@@ -130,6 +130,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 | Tool | Description | Source |
 |:-----|:------------|:-------|
+| Ghostty | Fast, native, GPU-accelerated terminal emulator | [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) |
 | iTerm2 | Feature-rich terminal emulator for macOS | [gnachman/iTerm2](https://github.com/gnachman/iTerm2) |
 | Zsh | Interactive shell with extensive customization | [zsh-users/zsh](https://github.com/zsh-users/zsh) |
 | Tmux | Terminal multiplexer + management for sessions, windows, and panes | [tmux/tmux](https://github.com/tmux/tmux) |
