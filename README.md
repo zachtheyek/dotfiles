@@ -5,13 +5,13 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 > 
 >  - Keyboard-first, with a strong preference for vim bindings & TUIs
 >    - The less time I spend thinking about where to place my fingers, or what app I need to go to, the more time I spend actually coding
->  - Clean & consistent UI > ricing
+>  - Clean & consistent UI > ricing potential
 >    - Everything is optimized for a single 27" 4k 120Hz monitor (I don't believe in any other monitor setup). The limited real estate forces me to declutter
 >    - Space should be filled intentionally. Consistency reduces visual fatigue
 >  - UNIX principle: tools should do one thing well
 >    - I generally don't like all-in-one solutions, though it's not necessarily a strict boundary
 >    - Bonus points if the tool is open-source, community-driven, and well-maintained
->  - macOS only
+>  - macOS only, I minimally factor cross-platform compatibility into my tool selection
 >    - Windows is trash :/
 >    - Linux is really cool, it just lacks some core features/software that I've come to rely on
 >      - Though I'm actively working on an Arch Linux port, so stay tuned for that!
