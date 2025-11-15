@@ -5,8 +5,9 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 > 
 >  - Keyboard-first, with a strong preference for vim bindings & TUIs
 >    - The less time I spend thinking about where to place my fingers, or what app I need to go to, the more time I spend actually coding
->  - Consistent UI > ricing potential
->    - Everything is optimized for a single 27" 4k 120Hz monitor. I don't believe in any other monitor setup
+>  - Clean & consistent UI > ricing
+>    - Consistency reduces visual fatigue
+>    - Everything is optimized for a single 27" 4k 120Hz monitor (I don't believe in any other monitor setup). The limited real estate forces me to declutter. Space should be filled intentionally
 >  - UNIX principle: tools should do one thing well
 >    - I generally don't like all-in-one solutions, though it's not necessarily a strict boundary
 >    - Bonus points if the tool is open-source, community-driven, and well-maintained
