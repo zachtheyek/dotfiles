@@ -1,3 +1,5 @@
+-- BUG: why does cursorline highlighting get darker near the center & lighter near the top?
+
 local autocmd = vim.api.nvim_create_autocmd
 
 -- Auto-reload files on focus/buffer enter
