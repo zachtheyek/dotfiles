@@ -3,19 +3,27 @@
 while true; do
     echo "Hourly Weather Report: $(date '+%a %b %d %Y, %H:%M:%S (UTC%z)' | sed 's/+\([0-9]\{2\}\)[0-9]\{2\}/+\1/' | sed 's/-\([0-9]\{2\}\)[0-9]\{2\}/-\1/')"
 
-    # Retry logic for curl
-    max_retries=5
-    retry_count=0
-    while [ $retry_count -lt $max_retries ]; do
-        if curl v2d.wttr.in/Kuala-Lumpur; then
+    # Retry loop
+    max_attempts=30  # Try for 30 mins max
+    num_attempts=0
+    outputs=()
+    while [ $num_attempts -lt $max_attempts ]; do
+        num_attempts=$((num_attempts + 1))
+        curl_output=$(curl v2d.wttr.in/Kuala-Lumpur 2>&1)
+        # If curl was successful, print output & break retry loop
+        if [ $? -eq 0 ]; then
+            echo "$curl_output"
             break
+        # Else add errors to list
         else
-            retry_count=$((retry_count + 1))
-            if [ $retry_count -lt $max_retries ]; then
-                # echo "Curl failed, retrying in 1 minute..."
+            outputs+=("Curl attempt $num_attempts/$max_attempts: $curl_output")
+            # If more attempts left, sleep & try again later
+            if [ $num_attempts -lt $max_attempts ]; then
                 sleep 60  # seconds
+            # Else give up & flush errors into stdout 
             else
-                echo "Curl failed after $max_retries attempts"
+                echo "Curl failed after $max_attempts attempts:"
+                printf '%s\n' "${outputs[@]}"
             fi
         fi
     done
@@ -25,6 +33,7 @@ while true; do
     seconds_past_hour=$((current_seconds % 3600))
     seconds_until_next_hour=$((3600 - seconds_past_hour))
 
+    # Wait for next hour
     sleep $seconds_until_next_hour
     clear
 done
