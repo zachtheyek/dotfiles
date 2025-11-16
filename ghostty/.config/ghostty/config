@@ -11,14 +11,15 @@ font-thicken = true
 adjust-cell-width = -10%
 
 # BUG: blinking not disabled in Ghostty shell (not a problem in tmux shell)
-# cursor-style-blink = false
+cursor-style-blink = false
 
-mouse-scroll-multiplier = 0.2
+mouse-scroll-multiplier = 0.25
 mouse-hide-while-typing = true
 
 # Treat either option key as alt
 macos-option-as-alt = true
 
+# BUG: weird escape codes in certain cases of pasting. only happens in nvim, but not always. investigate further
 # Use standard bracketed paste, instead of CSI u-mode 
 # Prevents unwanted escape sequences during paste (e.g. [27;5;106~)
 clipboard-paste-bracketed-safe = false
