@@ -49,8 +49,21 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # TODO: fix zsh-vi-mode & zsh-autopair integration
-# TODO: how to sync zsh-vi-mode yank with system clipboard?
-# BUG: zsh-vi-mode breaks after double sourcing? 
+# TODO: how to set zsh-vi-mode yank to system clipboard?
+# BUG: 
+# zsh-vi-mode has weird startup behavior on following events
+# (1)
+# when sourcing ~/.zshrc repeatedly, cursor starts as block, and only returns to normal 
+# (bar: insert, block: normal & visual) upon entering normal mode -> returning to insert mode
+# then, problem goes away even if we source ~/.zshrc again 
+# happens for both Ghostty shell & tmux shell
+# (2)
+# in Ghostty shell, cursor doesn't blink (as specified in Ghostty config)
+# but upon switching modes (i.e. insert -> normal) cursor starts to blink 
+# keeps blinking until we move to next command (e.g. pressing enter or ctrl+c)
+# then, cursor doesn't blink again, unless we change modes again
+# not a problem in tmux shell
+#
 # Reinitialize zsh-vi-mode cleanly if re-sourcing
 if [[ -n $ZSH_VERSION && -o zle ]]; then
   bindkey -v
