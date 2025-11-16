@@ -48,8 +48,9 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-### TODO: fix zsh-vi-mode & zsh-autopair integration
-### TODO: how to sync zsh-vi-mode yank with system clipboard?
+# TODO: fix zsh-vi-mode & zsh-autopair integration
+# TODO: how to sync zsh-vi-mode yank with system clipboard?
+# BUG: zsh-vi-mode breaks after double sourcing? 
 # Reinitialize zsh-vi-mode cleanly if re-sourcing
 if [[ -n $ZSH_VERSION && -o zle ]]; then
   bindkey -v
@@ -60,7 +61,7 @@ fi
 # Set up git wrapper for working with GitHub CLI
 eval "$(hub alias -s)"
 
-### TODO: fix fzf (begin)
+# TODO: fix fzf (begin)
 # Set up fzf key bindings & fuzzy completion
 eval "$(fzf --zsh)"
 # alias f="fzf"
@@ -161,7 +162,7 @@ ff() {
   aerospace list-windows --all | \
     fzf --height=40% --bind "enter:execute-silent(aerospace focus --window-id {1})+abort"
 }
-### TODO: fix fzf (end)
+# TODO: fix fzf (end)
 
 # Prefer fd over find
 alias find="fd"
