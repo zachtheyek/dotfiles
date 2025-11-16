@@ -3,7 +3,7 @@ This repository relies on [GNU Stow](https://www.gnu.org/software/stow/) to cent
 > [!NOTE]
 > All packages are configured to my personal liking, and are highly opinionated & biased. My general philosophy, in descending order of importance: 
 > 
->  - Keyboard-first, with a strong preference for vim bindings & TUIs
+>  - Keyboard-first, with a strong preference for vim bindings, CLIs, and TUIs
 >    - The less time I spend thinking about where to place my fingers, or what app I need to go to, the more time I spend actually coding
 >  - Clean & consistent UI > ricing potential
 >    - Everything is optimized for a single 27" 4k 120Hz monitor (I don't believe in any other monitor setup). The limited real estate forces me to declutter
