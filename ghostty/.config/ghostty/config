@@ -1,5 +1,9 @@
 # TODO: delete iTerm2 artifacts and configs from device once Ghostty workflow matures
 
+# FIX: 
+# some bolded text looks weird when highlighted 
+# e.g. TODOs in nvim, or current session in tmux statusline
+# is it a Ghostty thing? or a catpuccin-mocha.conf thing? 
 theme = catppuccin-mocha.conf
 
 background-opacity = 0.8
@@ -8,9 +12,14 @@ background-blur-radius = 20
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
 font-thicken = true
+font-thicken-strength = 255
 adjust-cell-width = -10%
 
-# BUG: blinking not disabled in Ghostty shell (not a problem in tmux shell)
+# BUG: 
+# blinking not working properly with zsh-vi-mode inside Ghostty shell
+# disabled at first (in insert mode), but starts blinking after switching modes
+# zsh-vi-mode resetting something in background? 
+# not a problem in tmux shell
 cursor-style-blink = false
 
 mouse-scroll-multiplier = 0.25
@@ -19,7 +28,11 @@ mouse-hide-while-typing = true
 # Treat either option key as alt
 macos-option-as-alt = true
 
-# BUG: weird escape codes in certain cases of pasting. only happens in nvim, but not always. investigate further
+# BUG: 
+# weird escape codes in certain cases of pasting
+# only happens in nvim, but not always
+# investigate further
+# 
 # Use standard bracketed paste, instead of CSI u-mode 
 # Prevents unwanted escape sequences during paste (e.g. [27;5;106~)
 clipboard-paste-bracketed-safe = false

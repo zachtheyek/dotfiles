@@ -1,4 +1,6 @@
--- BUG: why does cursorline highlighting get darker near the center & lighter near the top?
+-- BUG:
+-- why does cursorline highlighting get darker near the center & lighter near the top?
+-- is it because of device background pic?
 
 local autocmd = vim.api.nvim_create_autocmd
 

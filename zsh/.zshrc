@@ -49,7 +49,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 ### TODO: fix zsh-vi-mode & zsh-autopair integration
-### NOTE: how to sync zsh-vi-mode yank with system clipboard?
+### TODO: how to sync zsh-vi-mode yank with system clipboard?
 # Reinitialize zsh-vi-mode cleanly if re-sourcing
 if [[ -n $ZSH_VERSION && -o zle ]]; then
   bindkey -v
