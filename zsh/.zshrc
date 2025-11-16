@@ -40,21 +40,22 @@ plugins=(
     docker-compose           # Docker-compose aliases & Auto-completion
     conda                    # Conda aliases 
     dbt                      # dbt aliases 
-    # zsh-vi-mode              # Enable Vim motions 
-    zsh-autopair             # Auto-close delimiters
+    zsh-vi-mode              # Enable Vim motions 
+    # zsh-autopair             # Auto-close delimiters
     zsh-autosuggestions      # Auto-completion
     zsh-syntax-highlighting  # Syntax highlighting
     fzf-zsh-plugin           # Fuzzy finder
 )
 source $ZSH/oh-my-zsh.sh
 
-### TODO: fix zsh-vi-mode integration
-# # Reinitialize zsh-vi-mode cleanly if re-sourcing
-# if [[ -n $ZSH_VERSION && -o zle ]]; then
-#   bindkey -v
-#   zle -A vi-insert self-insert
-#   zvm_init
-# fi
+### TODO: fix zsh-vi-mode & zsh-autopair integration
+### NOTE: how to sync zsh-vi-mode yank with system clipboard?
+# Reinitialize zsh-vi-mode cleanly if re-sourcing
+if [[ -n $ZSH_VERSION && -o zle ]]; then
+  bindkey -v
+  zle -A vi-insert self-insert
+  zvm_init
+fi
 
 # Set up git wrapper for working with GitHub CLI
 eval "$(hub alias -s)"
