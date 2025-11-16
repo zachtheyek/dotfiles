@@ -15,17 +15,11 @@ font-thicken = true
 font-thicken-strength = 255
 adjust-cell-width = -10%
 
-# BUG: 
-# blinking not working properly with zsh-vi-mode inside Ghostty shell
-# disabled at first (in insert mode), but starts blinking after switching modes
-# zsh-vi-mode resetting something in background? 
-# not a problem in tmux shell
 cursor-style-blink = false
 
 mouse-scroll-multiplier = 0.25
 mouse-hide-while-typing = true
 
-# Treat either option key as alt
 macos-option-as-alt = true
 
 # BUG: 
