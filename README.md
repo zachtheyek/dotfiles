@@ -122,7 +122,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 
 # Package Overview
 
-## Window Management & UI
+## Window Management & UI/UX
 
 | Tool | Description | Source |
 |:-----|:------------|:-------|
@@ -131,14 +131,14 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Karabiner | Powerful keyboard remapping for macOS | [pqrs-org/Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) |
 
 
-## Shell & Terminal
+## Terminal & Shell
 
 | Tool | Description | Source |
 |:-----|:------------|:-------|
 | Ghostty | Fast, native, GPU-accelerated terminal emulator | [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) |
 | iTerm2 | Feature-rich terminal emulator for macOS | [gnachman/iTerm2](https://github.com/gnachman/iTerm2) |
-| Zsh | Interactive shell with extensive customization | [zsh-users/zsh](https://github.com/zsh-users/zsh) |
 | Tmux | Terminal multiplexer + management for sessions, windows, and panes | [tmux/tmux](https://github.com/tmux/tmux) |
+| Zsh | Interactive shell with extensive customization | [zsh-users/zsh](https://github.com/zsh-users/zsh) |
 | Envman | Centralized management of shell variables, aliases, and functions | [bitrise-io/envman](https://github.com/bitrise-io/envman) |
 
 
@@ -176,13 +176,13 @@ mv ~/.config/nvim ~/.config/nvim.backup
 |:-----|:------------|:-------|
 | Btop | Beautiful terminal-based system monitor | [aristocratos/btop](https://github.com/aristocratos/btop) |
 | Htop | Interactive process monitoring tool | [htop-dev/htop](https://github.com/htop-dev/htop) |
-| Nvtop | GPU monitoring tool for NVIDIA, AMD, and Intel graphics cards | [Syllo/nvtop](https://github.com/Syllo/nvtop) |
 | S-tui | CPU monitoring and stress testing | [amanusk/s-tui](https://github.com/amanusk/s-tui) |
+| Nvtop | GPU monitoring tool for NVIDIA, AMD, and Intel graphics cards | [Syllo/nvtop](https://github.com/Syllo/nvtop) |
 | Fastfetch | `Neofetch` alternative with faster performance | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 | Neofetch | System information tool with ASCII art | [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) |
 
 
-## Productivity & Utilities
+## Utilities
 
 | Tool | Description | Source |
 |:-----|:------------|:-------|
