@@ -25,11 +25,15 @@ macos-option-as-alt = true
 # BUG: 
 # weird escape codes in certain cases of pasting
 # only happens in nvim, but not always
-# investigate further
+# specifically, yank (y) -> paste (p) works fine 
+# but pasting with cmd+v results in weird escape codes
+# NOTE: fixed in tmux.conf with set -s extended-keys off. monitor fix & delete comments when stable
 # 
 # Use standard bracketed paste, instead of CSI u-mode 
-# Prevents unwanted escape sequences during paste (e.g. [27;5;106~)
+# Prevents unwanted escape sequences during paste (e.g. [27;5;106~)
 clipboard-paste-bracketed-safe = false
+# Disable paste confirmation
+clipboard-paste-protection = false
 
 # Don't confirm before quitting application
 confirm-close-surface = false
