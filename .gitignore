@@ -20,7 +20,7 @@ tmux/.config/tmux/plugins/
 # Karabiner (backups)
 karabiner/.config/karabiner/automatic_backups/
 
-# Temporary packages/files
+# Placeholder packages/files
 TODO.md
 ZACH-READ.md
 tmp_brew/
