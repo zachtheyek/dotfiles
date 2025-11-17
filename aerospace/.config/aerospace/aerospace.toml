@@ -1,7 +1,15 @@
-# TODO: Verify the following functionality working as expected 
+# TODO: 
+# verify the following functionality working as expected 
 # 1. Aerospace starts properly on login 
 # 2. Sketchybar & Jankyborders hooks function properly on Aerospace startup on login
 #    a. Disable Sketchybar until UI finalized?
+# TODO: 
+# is there a way to prevent workspace/app switching for non-active workspace apps? 
+# e.g. suppose i'm on workspace A, and whatsapp is on workspace B 
+# currently, any existing method of switching apps (raycast, clicking the dock icon, etc.)
+# will switch me to workspace B and keep focus on the selected app (whatsapp)
+# i want aerospace to be the ONLY way i can switch to an app 
+# do i need to submit a issue/PR for this? 
 
 after-startup-command = [
     # "exec-and-forget sketchybar"
