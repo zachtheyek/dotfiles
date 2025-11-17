@@ -1,0 +1,46 @@
+-- BUG:
+-- Currently incompatible with Chrome Manifest V3
+-- No solutions as of now. Even building from source doesn't work
+-- https://github.com/glacambre/firenvim
+-- https://github.com/glacambre/firenvim/issues/1674
+-- https://chromewebstore.google.com/detail/Firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo
+-- Revisit in future once patch is released
+
+-- return {
+--     setup = function()
+--         -- Only apply these settings when running inside firenvim
+--         if vim.g.started_by_firenvim then
+--             -- Hide status line in browser to save space
+--             vim.o.laststatus = 0
+--
+--             -- Set reasonable defaults for browser text editing
+--             vim.o.lines = 20 -- Default height
+--             vim.o.columns = 80 -- Default width
+--         end
+--
+--         -- Configure firenvim behavior
+--         vim.g.firenvim_config = {
+--             globalSettings = { alt = "all" },
+--             localSettings = {
+--                 -- Default settings for all sites
+--                 [".*"] = {
+--                     cmdline = "neovim", -- Use neovim's cmdline
+--                     content = "text", -- Treat content as plain text
+--                     priority = 0,
+--                     selector = "textarea", -- Activate on textarea elements
+--                     takeover = "never", -- Don't auto-takeover (use <C-e> to manually trigger)
+--                 },
+--                 -- Example: Auto-takeover on GitHub
+--                 ["https?://github\\.com/.*"] = {
+--                     takeover = "always",
+--                     priority = 1,
+--                 },
+--                 -- Example: Larger editor for Google Docs
+--                 ["https?://docs\\.google\\.com/.*"] = {
+--                     takeover = "always",
+--                     priority = 1,
+--                 },
+--             },
+--         }
+--     end,
+-- }
