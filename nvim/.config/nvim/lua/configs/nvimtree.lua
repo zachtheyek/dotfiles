@@ -2,6 +2,7 @@
 -- -- also happens when toggling FTerm while filetree is open
 -- BUG: cursor resets to near-bottom when going from filetree to buffer (without closing filetree)
 -- BUG: nvimtree current line has small white horizontal line on right that shows instead of cursorline (has something to do with scrollbar?)
+-- BUG: nvimtree preview window doesn't close properly when quiting nvimtree buffer
 -- TODO: define list of files/directories to ignore (e.g. .git, .claude). don't strictly follow .gitignore. also no way to toggle on/off showing ignored files?
 
 local M = {}
