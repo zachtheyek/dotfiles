@@ -3,7 +3,7 @@
 #  # lettered spaces (m, s, t, w) aren't displaying properly rn
 #  # spaces don't updated when switched (issue with Aerospace hooks?)
 #  # empty spaces still appear in bar
-# Add battery, wifi/ethernet (+ vpn), and weather info (temp, humidity, AQI, etc.) to menu bar
+# Add battery, wifi/ethernet (+ vpn), weather info (temp, humidity, AQI, etc.), and input language to menu bar
 #  # should i add calendar events too (icalBuddy)? or leave that functionality for tmux statusbar?
 
 #!/usr/bin/env sh
