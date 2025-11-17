@@ -34,7 +34,7 @@ autocmd("QuitPre", {
     end,
 })
 
--- Always auto-center cursor in normal mode
+-- Auto-center cursor in normal mode
 -- Note, this might affect mouse-wheel scrolling behavior (just use vim motions)
 local center_group = vim.api.nvim_create_augroup("AutoCenter", { clear = true })
 
@@ -66,10 +66,27 @@ autocmd({ "VimResized" }, {
 })
 
 -- Disable auto-commenting on new lines
+-- Useful spell check commands:
+-- ]s: Jump to next misspelled word
+-- [s: Jump to previous misspelled word
+-- z=: Show spelling suggestions for word under cursor
+-- zg: Add word to personal dictionary (good word)
+-- zw: Mark word as misspelled
+-- zug/zuw: Undo adding/marking word
+-- TODO: remap spellcheck bindings?
 autocmd("FileType", {
     pattern = "*",
     callback = function()
         vim.opt_local.formatoptions:remove({ "r", "o" })
+    end,
+})
+
+-- Enable spellcheck for specific filetypes (only applies to current buffer)
+autocmd("FileType", {
+    pattern = { "markdown", "text" },
+    callback = function()
+        vim.opt_local.spell = true
+        vim.opt_local.spelllang = "en_us"
     end,
 })
 
