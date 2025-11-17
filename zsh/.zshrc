@@ -49,7 +49,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # TODO: fix zsh-vi-mode & zsh-autopair integration
-# TODO: how to set zsh-vi-mode yank to system clipboard?
 # BUG: 
 # zsh-vi-mode has weird startup behavior on following events
 # (1)
@@ -70,6 +69,12 @@ if [[ -n $ZSH_VERSION && -o zle ]]; then
   zle -A vi-insert self-insert
   zvm_init
 fi
+
+# TODO: how to set zsh-vi-mode yank to system clipboard?
+# Integrate zsh-vi-mode with system clipboard
+# ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+# ZVM_CLIPBOARD_COPY_CMD='xclip -selection clipboard'
+# ZVM_CLIPBOARD_PASTE_CMD='xclip -selection clipboard -o'
 
 # Set up git wrapper for working with GitHub CLI
 eval "$(hub alias -s)"
