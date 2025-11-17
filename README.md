@@ -176,6 +176,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 |:-----|:------------|:-------|
 | Btop | Beautiful terminal-based system monitor | [aristocratos/btop](https://github.com/aristocratos/btop) |
 | Htop | Interactive process monitoring tool | [htop-dev/htop](https://github.com/htop-dev/htop) |
+| Nvtop | GPU monitoring tool for NVIDIA, AMD, and Intel graphics cards | [Syllo/nvtop](https://github.com/Syllo/nvtop) |
 | S-tui | CPU monitoring and stress testing | [amanusk/s-tui](https://github.com/amanusk/s-tui) |
 | Fastfetch | `Neofetch` alternative with faster performance | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 | Neofetch | System information tool with ASCII art | [dylanaraps/neofetch](https://github.com/dylanaraps/neofetch) |
