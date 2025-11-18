@@ -148,7 +148,6 @@ mv ~/.config/nvim ~/.config/nvim.backup
 |:-----|:------------|:-------|
 | Yazi | Modern TUI file manager with image previews | [sxyazi/yazi](https://github.com/sxyazi/yazi) |
 | Fzf | Interactive fuzzy search for files, commands, and more | [junegunn/fzf](https://github.com/junegunn/fzf) |
-| Zoxide | Smarter `cd` that learns your habits | [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide) |
 | Eza | Enhanced `ls` with icons and git integration | [eza-community/eza](https://github.com/eza-community/eza) |
 
 
@@ -187,8 +186,9 @@ mv ~/.config/nvim ~/.config/nvim.backup
 | Tool | Description | Source |
 |:-----|:------------|:-------|
 | iCalBuddy | macOS calendar integration inside terminal and tmux | [ali-rantakari/icalBuddy](https://github.com/ali-rantakari/icalBuddy) |
-| Thefuck | Auto-correct mistyped commands | [nvbn/thefuck](https://github.com/nvbn/thefuck) |
 | yt-dlp | Download videos from YouTube and other platforms | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) |
+| Thefuck | Auto-correct mistyped commands | [nvbn/thefuck](https://github.com/nvbn/thefuck) |
+| Chrome | Configuration files for Chrome browser extensions | |
 | Scripts | Personal collection of maintenance and utility scripts | |
 
 
