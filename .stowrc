@@ -39,11 +39,11 @@
 # iTerm configs (sourced directly via iTerm2 preferences. no need to symlink)
 --ignore=com\.googlecode\.iterm2\.plist
 
+# Chrome extension configs (sourced directly from Chrome. no need to symlink)
+--ignore=^chrome(/|$)
+
 # Claude local configs
 --ignore=\.claude/settings\.local\.json$
 
 # Sanitized example files (these should be committed but not stowed)
 --ignore=\.example$
-
-# Chrome directory (excluded from stowing)
---ignore=^/chrome$
