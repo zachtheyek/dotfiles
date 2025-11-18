@@ -1,5 +1,9 @@
 -- BUG: wrapped lines have weird behavior at gutters in visual mode
 return {
+    -- NOTE: uncomment when PR merged
+    -- base = 4,
+    -- max_digits = 4,
+
     -- Only use digits 1-4
     labels = {
         "1",
