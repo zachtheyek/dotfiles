@@ -22,6 +22,16 @@ return {
         end,
     },
 
+    -- Preview LSP definitions & references inside floating window (specified by goto_preview.lua)
+    {
+        "rmagatti/goto-preview",
+        dependencies = { "rmagatti/logger.nvim" },
+        event = "BufEnter",
+        config = function()
+            require("configs.goto_preview").setup()
+        end,
+    },
+
     -- Syntax parsing engine (specified by treesitter.lua)
     {
         "nvim-treesitter/nvim-treesitter",
@@ -148,6 +158,14 @@ return {
         opts = require("configs.noice"),
     },
 
+    -- TODO: come back to this later
+    -- Enhanced UI for LSP progress & notifications (specified by fidget.lua)
+    -- {
+    --     "j-hui/fidget.nvim",
+    --     event = "LspAttach",
+    --     opts = require("configs.fidget"),
+    -- },
+
     -- View URLs in buffer with telescope (specified by urlview.lua)
     {
         "axieax/urlview.nvim",
@@ -230,6 +248,17 @@ return {
         end,
     },
 
+    -- TODO: come back to this later
+    -- Extensible scrollbar (specified by scrollbar.lua)
+    -- {
+    --     "petertriho/nvim-scrollbar",
+    --     event = "BufEnter",
+    --     dependencies = { "lewis6991/gitsigns.nvim" },
+    --     config = function()
+    --         require("configs.scrollbar").setup()
+    --     end,
+    -- },
+
     -- Keymap hints (specified by whichkey.lua)
     {
         "folke/which-key.nvim",
@@ -289,6 +318,15 @@ return {
         end,
     },
 
+    -- Indent guides (specified by indent_blankline.lua)
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        event = "BufEnter",
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+        opts = require("configs.indent_blankline"),
+    },
+
     -- Auto-close pairs (specified by autopairs.lua)
     {
         "windwp/nvim-autopairs",
@@ -322,6 +360,16 @@ return {
         end,
     },
 
+    -- TODO: come back to this later
+    -- Draw ASCII diagrams (specified by venn.lua)
+    -- {
+    --     "jbyuki/venn.nvim",
+    --     lazy = false,
+    --     config = function()
+    --         require("configs.venn").setup()
+    --     end,
+    -- },
+
     -- NOTE: nice-to-have, not enabled by default
     -- Practicing Vim movements
     -- {
@@ -336,5 +384,16 @@ return {
     --     dependencies = "nvzone/volt",
     --     opts = {},
     --     cmd = { "Typr", "TyprStats" },
+    -- },
+
+    -- TODO: come back to this later
+    -- Embed Neovim inside browser (specified by firenvim.lua)
+    -- {
+    --     "glacambre/firenvim",
+    --     lazy = false,
+    --     build = ":call firenvim#install(0)",
+    --     config = function()
+    --         require("configs.firenvim").setup()
+    --     end,
     -- },
 }

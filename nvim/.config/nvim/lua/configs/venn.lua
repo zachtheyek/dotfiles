@@ -1,0 +1,44 @@
+-- TODO:
+-- finish configuring then learn how to use
+-- https://github.com/jbyuki/venn.nvim
+
+-- local M = {}
+--
+-- -- Toggle function for venn drawing mode
+-- function _G.Toggle_venn()
+--     local venn_enabled = vim.inspect(vim.b.venn_enabled)
+--     if venn_enabled == "nil" then
+--         vim.b.venn_enabled = true
+--         vim.cmd([[setlocal ve=all]])
+--
+--         -- HJKL keys draw lines in normal mode
+--         vim.api.nvim_buf_set_keymap(0, "n", "J", "<C-v>j:VBox<CR>", { noremap = true })
+--         vim.api.nvim_buf_set_keymap(0, "n", "K", "<C-v>k:VBox<CR>", { noremap = true })
+--         vim.api.nvim_buf_set_keymap(0, "n", "L", "<C-v>l:VBox<CR>", { noremap = true })
+--         vim.api.nvim_buf_set_keymap(0, "n", "H", "<C-v>h:VBox<CR>", { noremap = true })
+--
+--         -- 'f' draws boxes in visual mode
+--         vim.api.nvim_buf_set_keymap(0, "v", "f", ":VBox<CR>", { noremap = true })
+--
+--         vim.notify("Venn drawing mode enabled", vim.log.levels.INFO)
+--     else
+--         vim.cmd([[setlocal ve=]])
+--
+--         -- Remove keymaps
+--         vim.api.nvim_buf_del_keymap(0, "n", "J")
+--         vim.api.nvim_buf_del_keymap(0, "n", "K")
+--         vim.api.nvim_buf_del_keymap(0, "n", "L")
+--         vim.api.nvim_buf_del_keymap(0, "n", "H")
+--         vim.api.nvim_buf_del_keymap(0, "v", "f")
+--
+--         vim.b.venn_enabled = nil
+--         vim.notify("Venn drawing mode disabled", vim.log.levels.INFO)
+--     end
+-- end
+--
+-- M.setup = function()
+--     -- Map <leader>v to toggle venn drawing mode
+--     vim.api.nvim_set_keymap("n", "<leader>v", ":lua Toggle_venn()<CR>", { noremap = true, silent = true })
+-- end
+--
+-- return M

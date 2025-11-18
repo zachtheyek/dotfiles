@@ -1,0 +1,60 @@
+-- TODO:
+-- finish configuring
+-- note, does the notifs interfere with nvim-notify?
+-- only use this for lsp progress messages?
+-- https://github.com/j-hui/fidget.nvim
+
+-- return {
+--     -- LSP progress notification settings
+--     progress = {
+--         poll_rate = 0, -- How frequently to poll for progress messages (0 = no polling)
+--         suppress_on_insert = false, -- Suppress new messages while in insert mode
+--         ignore_done_already = false, -- Ignore new tasks that are already complete
+--
+--         display = {
+--             render_limit = 16, -- Maximum number of LSP messages to render
+--             done_ttl = 3, -- How long a message should persist after completion (seconds)
+--             done_icon = "✔", -- Icon shown when all tasks are complete
+--             progress_icon = { pattern = "dots", period = 1 }, -- Progress spinner pattern
+--
+--             -- Icons for various task states
+--             group_style = "Title", -- Highlight group for task groups
+--             icon_style = "Question", -- Highlight group for icons
+--             progress_style = "WarningMsg", -- Highlight group for progress messages
+--         },
+--     },
+--
+--     -- Notification window settings
+--     notification = {
+--         poll_rate = 10, -- How frequently to update and render notifications
+--         filter = vim.log.levels.INFO, -- Minimum notification level to display
+--         history_size = 128, -- Number of removed messages to retain in history
+--         override_vim_notify = false, -- Automatically override vim.notify() with Fidget
+--
+--         window = {
+--             normal_hl = "Comment", -- Base highlight group for window
+--             winblend = 100, -- Background color opacity (0-100)
+--             border = "none", -- Border style
+--             zindex = 45, -- Stacking priority
+--             max_width = 0, -- Maximum width (0 = unlimited)
+--             max_height = 0, -- Maximum height (0 = unlimited)
+--             x_padding = 1, -- Horizontal padding
+--             y_padding = 0, -- Vertical padding
+--             align = "bottom", -- How to align notification window
+--             relative = "editor", -- What the notification window is relative to
+--         },
+--     },
+--
+--     -- Integration settings
+--     integration = {
+--         ["nvim-tree"] = {
+--             enable = true, -- Integrate with nvim-tree
+--         },
+--     },
+--
+--     -- Logging settings (for debugging)
+--     logger = {
+--         level = vim.log.levels.WARN, -- Minimum logging level
+--         float_precision = 0.01, -- Limit number of decimals in logs
+--     },
+-- }

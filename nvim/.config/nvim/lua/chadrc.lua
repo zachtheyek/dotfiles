@@ -12,6 +12,10 @@ M.base46 = {
         NvimTreeNormalNC = { bg = "none" },
         NvimTreeEndOfBuffer = { bg = "none" },
         NvimTreeWinSeparator = { bg = "none" },
+
+        -- Brighten comments for better visibility
+        Comment = { fg = "#7f849c" },
+        ["@comment"] = { fg = "#7f849c" }, -- TreeSitter uses @comment instead of Comment
     },
     changed_themes = {},
     transparency = true,

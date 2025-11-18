@@ -1,0 +1,158 @@
+-- TODO:
+-- finish configuring
+-- https://github.com/petertriho/nvim-scrollbar
+-- BUG: currently the scrollbar has a small portion on the right that shows as a white horizontal line on the cursorline. disable this. scrollbar should be unintrusive
+
+-- local M = {}
+--
+-- M.setup = function()
+--     require("scrollbar").setup({
+--         -- Display settings
+--         show = true,
+--         show_in_active_only = false,
+--         set_highlights = true,
+--         handle = {
+--             text = " ",
+--             blend = 30, -- Transparency (0-100)
+--             color = nil, -- Will use ScrollbarHandle highlight
+--             hide_if_all_visible = true,
+--         },
+--
+--         -- Performance
+--         throttle_ms = 100,
+--         folds = 1000, -- Max lines for fold indicators
+--         max_lines = false, -- Don't disable for large files
+--         hide_if_all_visible = false, -- Show even when entire file visible
+--
+--         -- Marker appearance and priority
+--         marks = {
+--             Cursor = {
+--                 text = "─",
+--                 priority = 0,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "Normal",
+--             },
+--             Search = {
+--                 text = { "─", "═" },
+--                 priority = 1,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "Search",
+--             },
+--             Error = {
+--                 text = { "─", "═" },
+--                 priority = 2,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "DiagnosticVirtualTextError",
+--             },
+--             Warn = {
+--                 text = { "─", "═" },
+--                 priority = 3,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "DiagnosticVirtualTextWarn",
+--             },
+--             Info = {
+--                 text = { "─", "═" },
+--                 priority = 4,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "DiagnosticVirtualTextInfo",
+--             },
+--             Hint = {
+--                 text = { "─", "═" },
+--                 priority = 5,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "DiagnosticVirtualTextHint",
+--             },
+--             Misc = {
+--                 text = { "─", "═" },
+--                 priority = 6,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "Normal",
+--             },
+--             GitAdd = {
+--                 text = "│",
+--                 priority = 7,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "GitSignsAdd",
+--             },
+--             GitChange = {
+--                 text = "│",
+--                 priority = 7,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "GitSignsChange",
+--             },
+--             GitDelete = {
+--                 text = "▁",
+--                 priority = 7,
+--                 gui = nil,
+--                 color = nil,
+--                 cterm = nil,
+--                 highlight = "GitSignsDelete",
+--             },
+--         },
+--
+--         -- Excluded contexts
+--         excluded_buftypes = {
+--             "terminal",
+--         },
+--         excluded_filetypes = {
+--             "cmp_docs",
+--             "cmp_menu",
+--             "noice",
+--             "prompt",
+--             "TelescopePrompt",
+--             "alpha",
+--         },
+--
+--         -- Auto-commands
+--         autocmd = {
+--             render = {
+--                 "BufWinEnter",
+--                 "TabEnter",
+--                 "TermEnter",
+--                 "WinEnter",
+--                 "CmdwinLeave",
+--                 "TextChanged",
+--                 "VimResized",
+--                 "WinScrolled",
+--             },
+--             clear = {
+--                 "BufWinLeave",
+--                 "TabLeave",
+--                 "TermLeave",
+--                 "WinLeave",
+--             },
+--         },
+--
+--         -- Built-in handlers
+--         handlers = {
+--             cursor = true,
+--             diagnostic = true,
+--             gitsigns = false, -- Enabled separately below
+--             handle = true,
+--             search = false, -- Can enable with nvim-hlslens if desired
+--         },
+--     })
+--
+--     -- Enable git change markers (requires gitsigns.nvim)
+--     require("scrollbar.handlers.gitsigns").setup()
+-- end
+--
+-- return M
