@@ -44,3 +44,6 @@
 
 # Sanitized example files (these should be committed but not stowed)
 --ignore=\.example$
+
+# Chrome directory (excluded from stowing)
+--ignore=^/chrome$
