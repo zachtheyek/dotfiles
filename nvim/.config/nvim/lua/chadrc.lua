@@ -16,6 +16,9 @@ M.base46 = {
         -- Brighten comments for better visibility
         Comment = { fg = "#7f849c" },
         ["@comment"] = { fg = "#7f849c" }, -- TreeSitter uses @comment instead of Comment
+
+        -- Brighten line numbers for better visibility
+        LineNr = { fg = "#7f849c" },
     },
     changed_themes = {},
     transparency = true,
