@@ -105,10 +105,10 @@ local function apply_transparency()
     vim.api.nvim_set_hl(0, "NvimTreeWinSeparator", { bg = "none" })
 
     -- Lighter cursorline
-    vim.api.nvim_set_hl(0, "CursorLine", { bg = "#3a3a4a" })
-    vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "#3a3a4a" })
-    vim.api.nvim_set_hl(0, "Visual", { bg = "#3a3a4a" })
-    vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "#3a3a4a" })
+    vim.api.nvim_set_hl(0, "CursorLine", { bg = "#4a4e5c" })
+    vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "#4a4e5c" })
+    vim.api.nvim_set_hl(0, "Visual", { bg = "#4a4e5c" })
+    vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "#4a4e5c" })
 
     -- Noice cmdline colors
     vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { bg = "#2a2a3a", fg = "#ffffff" })
