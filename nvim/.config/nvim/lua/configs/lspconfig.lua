@@ -49,5 +49,6 @@ for _, mason_pkg in ipairs(mason_lspconfig.servers) do
             on_init = nvlsp.on_init,
             capabilities = nvlsp.capabilities,
         })
+        vim.lsp.enable(server_name)
     end
 end
