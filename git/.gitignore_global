@@ -14,6 +14,9 @@ ENV/
 # Jupyter checkpoints 
 .ipynb_checkpoints/
 
+# Linters/formatters
+.ruff_cache
+
 # Vim/Neovim artifacts
 *.swp
 *.swo
