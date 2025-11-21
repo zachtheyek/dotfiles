@@ -1,3 +1,8 @@
+-- BUG:
+-- These are general issues that I don't know where to place yet
+-- (1) Can't record macros with q
+-- (2) Keep accidentally entering diagnostics floating window & interrupting workflow
+
 vim.g.base46_cache = vim.fn.stdpath("data") .. "/base46/"
 vim.g.mapleader = " " -- Set leader key
 
