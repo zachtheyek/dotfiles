@@ -28,6 +28,7 @@ macos-option-as-alt = true
 # specifically, yank (y) -> paste (p) works fine 
 # but pasting with cmd+v results in weird escape codes
 # NOTE: fixed in tmux.conf with set -s extended-keys off. monitor fix & delete comments when stable
+# NOTE: still happening...
 # 
 # Use standard bracketed paste, instead of CSI u-mode 
 # Prevents unwanted escape sequences during paste (e.g. [27;5;106~)
