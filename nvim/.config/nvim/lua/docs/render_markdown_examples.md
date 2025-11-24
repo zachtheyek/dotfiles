@@ -7,21 +7,26 @@ This file demonstrates all features of the render-markdown.nvim plugin.
 All heading levels are supported with custom icons:
 
 # Heading 1
+
 ## Heading 2
+
 ### Heading 3
+
 #### Heading 4
+
 ##### Heading 5
+
 ###### Heading 6
 
 ---
 
 ## Text Formatting
 
-**Bold text** using double asterisks or __double underscores__.
+**Bold text** using double asterisks or **double underscores**.
 
-*Italic text* using single asterisks or _single underscores_.
+_Italic text_ using single asterisks or _single underscores_.
 
-***Bold and italic*** using triple asterisks.
+**_Bold and italic_** using triple asterisks.
 
 ~~Strikethrough~~ using double tildes.
 
@@ -90,7 +95,7 @@ print(fibonacci(10))
 ```javascript
 // JavaScript code example
 const factorial = (n) => {
-    return n <= 1 ? 1 : n * factorial(n - 1);
+  return n <= 1 ? 1 : n * factorial(n - 1);
 };
 
 console.log(factorial(5));
@@ -113,7 +118,9 @@ ls -la
 > And have multiple paragraphs.
 
 > Nested quotes work too:
+>
 > > This is nested inside
+> >
 > > > And this is even deeper
 
 ---
@@ -134,19 +141,19 @@ Auto-link: <https://example.com>
 
 ## Tables
 
-| Feature | Status | Priority |
-|---------|--------|----------|
-| Headings | ✅ Done | High |
-| Code blocks | ✅ Done | High |
-| Tables | ✅ Done | Medium |
-| Callouts | 🔄 Testing | Medium |
+| Feature     | Status     | Priority |
+| ----------- | ---------- | -------- |
+| Headings    | ✅ Done    | High     |
+| Code blocks | ✅ Done    | High     |
+| Tables      | ✅ Done    | Medium   |
+| Callouts    | 🔄 Testing | Medium   |
 
 ### Aligned Tables
 
 | Left aligned | Center aligned | Right aligned |
-|:-------------|:--------------:|--------------:|
-| Left         | Center         | Right         |
-| Text         | More text      | Numbers: 123  |
+| :----------- | :------------: | ------------: |
+| Left         |     Center     |         Right |
+| Text         |   More text    |  Numbers: 123 |
 
 ---
 
@@ -180,9 +187,9 @@ Three or more hyphens, asterisks, or underscores:
 
 ---
 
-***
+---
 
-___
+---
 
 ---
 
@@ -198,6 +205,7 @@ ___
        > With multiple lines.
 
 2. Second ordered item
+
    ```lua
    -- Code block in a list
    local x = 42
@@ -206,7 +214,7 @@ ___
 3. Third ordered item
    | Column A | Column B |
    |----------|----------|
-   | Data 1   | Data 2   |
+   | Data 1 | Data 2 |
 
 ---
 
@@ -225,6 +233,7 @@ Here's a sentence with a footnote.[^1]
 Another sentence with another footnote.[^2]
 
 [^1]: This is the first footnote.
+
 [^2]: This is the second footnote with more details.
 
 ---
@@ -243,7 +252,8 @@ Term 2
 ## LaTeX Math
 
 **Note:** Requires either `latex2text` (pylatexenc) or `utftex` to be installed and in PATH. Try both to see which one you prefer.
-  - We default to `utftex` since (1) it can be installed system-wide via Homebrew, instead of requiring pip, and (2) it looks better
+
+- We choose `utftex` since (1) it can be installed system-wide via Homebrew, instead of requiring pip/conda, and (2) it looks better
 
 ### Inline Math
 
@@ -258,21 +268,25 @@ Subscripts and superscripts: $x_1, x_2, x^2, x^{2n}$
 ### Block Math
 
 Quadratic formula:
+
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
 Integral:
+
 $$
 \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
 $$
 
 Summation:
+
 $$
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
 
 Matrix:
+
 $$
 \begin{pmatrix}
 a & b\\
@@ -281,26 +295,31 @@ c & d
 $$
 
 Limits:
+
 $$
 \lim_{x \to \infty} \frac{1}{x} = 0
 $$
 
 Fractions and nested expressions:
+
 $$
 \frac{d}{dx}\left(\frac{x^2 + 1}{x - 1}\right)
 $$
 
 Set notation:
+
 $$
 \mathbb{R}, \mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{C}
 $$
 
 Logical operators:
+
 $$
 \forall x \in \mathbb{R}, \exists y \in \mathbb{R}: x < y
 $$
 
 Calculus:
+
 $$
 \nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}
 $$
@@ -315,6 +334,7 @@ $$
 > Complete these tasks before the deadline!
 
 - [x] Set up development environment
+
   ```bash
   npm install
   npm run dev
@@ -326,11 +346,11 @@ $$
   - [ ] Error handling
 
 - [ ] Write documentation
-  | Section | Status |
-  |---------|--------|
-  | Setup   | ✅     |
-  | API     | 🔄     |
-  | Deploy  | ❌     |
+      | Section | Status |
+      |---------|--------|
+      | Setup | ✅ |
+      | API | 🔄 |
+      | Deploy | ❌ |
 
 > [!TIP]
 > Use `git commit -m "message"` for atomic commits.
