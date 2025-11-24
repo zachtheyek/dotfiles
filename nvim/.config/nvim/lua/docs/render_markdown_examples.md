@@ -243,6 +243,7 @@ Term 2
 ## LaTeX Math
 
 **Note:** Requires either `latex2text` (pylatexenc) or `utftex` to be installed and in PATH. Try both to see which one you prefer.
+  - We default to `utftex` since (1) it can be installed system-wide via Homebrew, instead of requiring pip, and (2) it looks better
 
 ### Inline Math
 
