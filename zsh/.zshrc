@@ -293,6 +293,9 @@ unset __conda_setup
 #     compdef _conda conda
 # fi
 
+# Prioritize active conda environment over Homebrew for python/python3
+[ -n "$CONDA_PREFIX" ] && path=("$CONDA_PREFIX/bin" "${path[@]}")
+
 # Opam configs
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
