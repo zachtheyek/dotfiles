@@ -3,6 +3,7 @@
 --     e.g. | -> press "{" -> {|} -> press key binding -> {|},
 -- (2) add a key binding to jump cursor back to last pair
 --     e.g. {}| -> press key binding -> {|}
+-- TODO: <> don't have autopair
 
 return {
     setup = function()

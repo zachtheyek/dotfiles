@@ -1,3 +1,6 @@
+-- TODO: have a custom function s.t. when opening cwd with v ., we save the harpoon menu to a tmp file, then loads the entire cwd into the harpoon menu s.t. we can use next/prev to easily explore the cwd. set size/level limits so we don't overwhelm the menu. on exit, clean the harpoon menu, then pop the tmp file contents back & delete the tmp file
+-- BUG: weird behavior when moving beyond harpoon menu bounds (no wrap, but jumps out of menu)
+
 local M = {}
 
 function M.setup()
