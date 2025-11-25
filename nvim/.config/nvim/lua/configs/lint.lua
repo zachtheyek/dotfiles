@@ -1,0 +1,14 @@
+-- TODO:
+-- Python: ruff-linter (packaged together with ruff-format?)
+-- C/C++: linter already built-in?
+-- Rust: linter already built-in?
+-- Shell: shellcheck
+-- SQL: linter also uses sqlfluff?
+-- Lua: linter already built-in?
+-- JS/TS: eslint (no linter for html/css?)
+-- Docker: hadolint
+-- Markdown: markdownlint
+-- no linter for json?
+-- YAML: yamllint
+-- GitHub Actions: actionlint (formatter just uses .yml? will linter default to actionlint or yamllint?)
+-- remember to brew install tools into system PATH

@@ -1,3 +1,6 @@
+-- NOTE:
+-- How do i include LSP-specific configs? need to specify at project-level?
+
 -- Load NvChad default LSP settings
 require("nvchad.configs.lspconfig").defaults()
 
@@ -10,6 +13,7 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
     opts.border = opts.border or "rounded"
     opts.max_width = opts.max_width or 80
     opts.max_height = opts.max_height or 20
+    opts.focusable = false -- Prevent focus stealing while typing
     return orig_util_open_floating_preview(contents, syntax, opts, ...)
 end
 
@@ -18,26 +22,25 @@ local mason_lspconfig = require("configs.mason_lspconfig")
 
 -- Map Mason package names to lspconfig server names
 local server_map = {
-    ["bash-language-server"] = "bashls",
-    ["clangd"] = "clangd",
-    ["cmake-language-server"] = "cmake",
-    ["css-lsp"] = "cssls",
-    ["dockerfile-language-server"] = "dockerls",
-    ["html-lsp"] = "html",
-    ["jdtls"] = "jdtls",
-    ["typescript-language-server"] = "ts_ls",
-    ["json-lsp"] = "jsonls",
-    ["julia-lsp"] = "julials",
-    ["texlab"] = "texlab",
-    ["lua-language-server"] = "lua_ls",
-    ["marksman"] = "marksman",
-    ["ocaml-lsp"] = "ocamllsp",
-    ["pyright"] = "pyright",
-    ["r-languageserver"] = "r_language_server",
-    ["rust-analyzer"] = "rust_analyzer",
-    ["sqlls"] = "sqlls",
-    ["lemminx"] = "lemminx",
-    ["yaml-language-server"] = "yamlls",
+    ["bash-language-server"] = "bashls", -- .sh, .bash
+    ["clangd"] = "clangd", -- .c, .cpp, .h, .hpp
+    ["cmake-language-server"] = "cmake", -- CMakeLists.txt, .cmake
+    ["css-lsp"] = "cssls", -- .css
+    ["dockerfile-language-server"] = "dockerls", -- Dockerfile
+    ["html-lsp"] = "html", -- .html
+    ["jdtls"] = "jdtls", -- .java
+    ["json-lsp"] = "jsonls", -- .json
+    ["julia-lsp"] = "julials", -- .jl
+    ["lemminx"] = "lemminx", -- .xml
+    ["lua-language-server"] = "lua_ls", -- .lua
+    ["marksman"] = "marksman", -- .md
+    ["ocaml-lsp"] = "ocamllsp", -- .ml, .mli
+    ["pyright"] = "pyright", -- .py
+    ["rust-analyzer"] = "rust_analyzer", -- .rs
+    ["sqlls"] = "sqlls", -- .sql
+    ["texlab"] = "texlab", -- .tex
+    ["typescript-language-server"] = "ts_ls", -- .js, .jsx, .ts, .tsx
+    ["yaml-language-server"] = "yamlls", -- .yml, .yaml
 }
 
 -- Apply NVChad default on_attach, on_init, and capabilities to each LSP server
