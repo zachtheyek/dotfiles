@@ -60,6 +60,16 @@ return {
         opts = require("configs.render_markdown"),
     },
 
+    -- TODO: come back to this later
+    -- Code linter (specified by lint.lua)
+    -- {
+    --     "mfussenegger/nvim-lint",
+    --     event = { "BufReadPre", "BufNewFile" },  -- Is this correct? Match conform.lua?
+    --     config = function()
+    --         require("configs.lint")
+    --     end,
+    -- },
+
     -- Code formatter (specified by conform.lua)
     {
         "stevearc/conform.nvim",
