@@ -59,3 +59,16 @@ vim.keymap.del("n", "<leader>h")
 -- Delete NVChad's <leader>th mapping (conflicts with fterm)
 -- NVChad's default: <leader>th -> toggle telescope themes
 vim.keymap.del("n", "<leader>th")
+
+-- Focus LSP floating window (hover docs, signature help, diagnostics)
+map("n", "<leader>K", function()
+    local wins = vim.api.nvim_list_wins()
+    for _, win in ipairs(wins) do
+        local config = vim.api.nvim_win_get_config(win)
+        if config.relative ~= "" then -- It's a floating window
+            vim.api.nvim_set_current_win(win)
+            return
+        end
+    end
+    vim.notify("No floating window found", vim.log.levels.INFO)
+end, { desc = "Focus LSP floating window" })

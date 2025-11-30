@@ -37,6 +37,15 @@ return {
             view = "mini", -- Unobtrusive bottom-right corner
             throttle = 1000 / 30,
         },
+        -- BUG: noice's LSP signature/hover handling steals focus while typing in insert mode
+        -- Known issue: https://github.com/folke/noice.nvim/issues/1016
+        -- Disabling noice's LSP handlers; using native LSP + blink.cmp instead
+        signature = {
+            enabled = false,
+        },
+        hover = {
+            enabled = false,
+        },
         -- Override markdown rendering so that **blink.cmp** and other plugins use **Treesitter**
         override = {
             ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
