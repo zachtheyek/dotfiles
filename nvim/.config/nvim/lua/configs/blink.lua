@@ -1,3 +1,5 @@
+-- TODO: resize LSP window & set window to match background transparency
+
 local M = {}
 
 -- TODO:
