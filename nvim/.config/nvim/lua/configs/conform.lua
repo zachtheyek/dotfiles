@@ -16,6 +16,7 @@ local M = {}
 -- ask claude to suggest linter plugins for each language. sync with LSPs & formatters
 -- TODO: look into debuffers as well. ask claude for plugin suggestions. start with Python/C++
 M.formatters_by_ft = {
+    -- TODO: create global ruff config at ~/.config/ruff/ruff.toml (structured similarly to local configs: pyproject.toml). note that local configs take precedent over global configs (can either override with tool.ruff.lint.select, or work in parallel with tool.ruff.lint.extend-select, for example)
     -- Python
     python = {
         "ruff_format",
