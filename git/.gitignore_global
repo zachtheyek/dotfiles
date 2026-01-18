@@ -37,3 +37,6 @@ Session.vim
 # Logs/outputs
 *.log 
 *.out 
+
+# Environment variables 
+.env
