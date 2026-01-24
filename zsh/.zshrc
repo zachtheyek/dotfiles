@@ -312,3 +312,6 @@ if [ -f '/Users/zach/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/zach
 
 # Claude code setup
 alias claude="/Users/zach/.claude/local/claude"
+
+# Count lines of code 
+alias cloc="tokei"
