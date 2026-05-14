@@ -186,7 +186,7 @@ ff() {
 alias find="fd"
 
 # Prefer ripgrep over grep
-alias grep="rg"
+# alias grep="rg"
 
 # Yazi setup 
 function y() {
