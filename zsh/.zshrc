@@ -310,8 +310,5 @@ if [ -f '/Users/zach/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/zach/googl
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/zach/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/zach/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Claude code setup
-alias claude="/Users/zach/.claude/local/claude"
-
 # Count lines of code 
 alias cloc="tokei"
