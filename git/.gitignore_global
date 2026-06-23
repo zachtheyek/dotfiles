@@ -11,7 +11,7 @@ venv/
 env/
 ENV/
 
-# Jupyter checkpoints 
+# Jupyter checkpoints
 .ipynb_checkpoints/
 
 # Linters/formatters
@@ -24,19 +24,21 @@ ENV/
 .nv/
 Session.vim
 
-# Claude configs
-.claude/
+# Claude configs (ignore local state, but track project-local instructions & shared skills)
+.claude/*
+!.claude/CLAUDE.md
+!.claude/skills/
 
 # Caches/backups
 .cache/
 *.tmp
-*.bak 
+*.bak
 *.backup
 *.old
 
 # Logs/outputs
-*.log 
-*.out 
+*.log
+*.out
 
-# Environment variables 
+# Environment variables
 .env
