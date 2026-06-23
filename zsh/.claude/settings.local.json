@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(zsh -c 'source .zshrc')",
+      "Bash(security find-generic-password:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
