@@ -50,6 +50,6 @@
 [diff]
     colorMoved = default
 [oh-my-zsh]
-	git-commit-alias = a07126330b9f56f12f1e00ddd29786d35d6e64d9
+	git-commit-alias = 5181447da820331ba48ca976d1885501aa8a573b
 [fetch]
 	prune = true
