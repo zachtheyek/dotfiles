@@ -1,6 +1,23 @@
 #!/usr/bin/env bash
 
-LOCAL_DIR="${1:?Usage: $0 <local_dir> [remote_dir]}"
+USAGE="Usage: $0 [-r|--max-retries N] [-w|--retry-wait SECONDS] <local_dir> [remote_dir]"
+
+MAX_RETRIES="${MAX_RETRIES:-3}"
+RETRY_WAIT="${RETRY_WAIT:-30}"
+
+POSITIONAL=()
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -r|--max-retries) MAX_RETRIES="$2"; shift 2 ;;
+        -w|--retry-wait)  RETRY_WAIT="$2"; shift 2 ;;
+        -h|--help)        echo "$USAGE"; exit 0 ;;
+        -*)               echo "Unknown option: $1" >&2; echo "$USAGE" >&2; exit 1 ;;
+        *)                POSITIONAL+=("$1"); shift ;;
+    esac
+done
+set -- "${POSITIONAL[@]}"
+
+LOCAL_DIR="${1:?$USAGE}"
 REMOTE_DIR="${2:-/sdcard/Movies}"
 DRY_RUN="${DRY_RUN:-0}"
 
@@ -61,11 +78,23 @@ while IFS= read -r -d '' filepath; do
             ((pushed++))
         else
             echo "[PUSH]      $filename"
-            if adb push "$filepath" "$REMOTE_DIR/$filename"; then
+            attempt=0
+            push_ok=0
+            while :; do
+                if adb push "$filepath" "$REMOTE_DIR/$filename"; then
+                    push_ok=1
+                    break
+                fi
+                ((attempt++))
+                (( attempt > MAX_RETRIES )) && break
+                echo "[RETRY]     $filename (retry $attempt/$MAX_RETRIES in ${RETRY_WAIT}s)"
+                sleep "$RETRY_WAIT"
+            done
+            if (( push_ok )); then
                 pushed_files+=("$filepath")
                 ((pushed++))
             else
-                echo "[FAILED]    $filename"
+                echo "[FAILED]    $filename (gave up after $MAX_RETRIES retries)"
                 ((failed++))
             fi
         fi
@@ -75,11 +104,30 @@ done < <(find "$LOCAL_DIR" -maxdepth 1 -type f -print0)
 echo ""
 echo "Done. Pushed: $pushed | Skipped (existing): $skipped_existing | Skipped (gitignore): $skipped_gitignore | Failed: $failed"
 
+report_storage() {
+    local storage size used avail pct
+    storage=$(adb shell df -h /sdcard 2>/dev/null | awk '
+        NR > 1 {
+            for (i = 1; i <= NF; i++) if ($i ~ /%$/) {
+                print $(i-3), $(i-2), $(i-1), $i
+                exit
+            }
+        }')
+    read -r size used avail pct <<<"$storage"
+    echo ""
+    if [[ -n "$pct" ]]; then
+        echo "Quest storage: $used used of $size ($pct used, $avail free)"
+    else
+        echo "Quest storage: unable to read device storage info."
+    fi
+}
+
 # Collect all deletable files (pushed + skipped_existing)
 deletable=("${pushed_files[@]}" "${skipped_existing_files[@]}")
 
 if [[ ${#deletable[@]} -eq 0 ]]; then
     echo "No files to delete."
+    report_storage
     exit 0
 fi
 
@@ -99,3 +147,5 @@ if [[ "${answer,,}" == "y" ]]; then
 else
     echo "No files deleted."
 fi
+
+report_storage
