@@ -1,6 +1,7 @@
 [user]
 	name = zachtheyek
 	email = xiaoxiyek1.5@gmail.com
+	signingkey = 50B3297306864D405C24072798D1DDADBD14CDE8 # gitleaks:allow (public GPG key fingerprint, not a secret)
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -53,3 +54,11 @@
 	git-commit-alias = 5181447da820331ba48ca976d1885501aa8a573b
 [fetch]
 	prune = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[http]
+	postBuffer = 524288000
