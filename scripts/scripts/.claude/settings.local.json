@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(./benchmark_http.sh:*)"
-    ],
-    "deny": [],
-    "ask": []
-  }
-}
